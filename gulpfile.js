@@ -31,7 +31,9 @@ function minify(){
 
 function serveSass() {
   return src("./src/sass/*.sass")
-    .pipe(sass())
+    .pipe(sass({
+       outputStyle: 'expanded',
+    }))
     .pipe(dest("./src/css"))
     .pipe(browserSync.stream());
 };
