@@ -1,4 +1,4 @@
-const {src, dest, watch} = require('gulp');
+const {src, dest, watch, parallel} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
@@ -18,16 +18,16 @@ function bs() {
   // gulp.watch("./src/css/*.css").on('change', browserSync.reload);
 };
 
-// task('minify', () => {
-//   return src('./src/css/*.css')
-//     .pipe(cleanCSS({
-//       compatibility: 'ie8'
-//     }))
-//       .pipe(rename({
-//         suffix: '.min'
-//       }))
-//     .pipe(dest('./src/css'));
-// });
+function minify(){
+  return src('./src/css/*.css')
+    .pipe(cleanCSS({
+      compatibility: 'ie8'
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(dest('./src/css'));
+}
 
 function serveSass() {
   return src("./sass/*.sass")
@@ -36,4 +36,5 @@ function serveSass() {
     .pipe(browserSync.stream());
 };
 
-exports.serve = bs;
+exports.serve = parallel(bs);
+exports.minify = minify;
