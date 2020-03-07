@@ -13,7 +13,7 @@ function bs() {
   });
 
   watch("./*.html").on('change', browserSync.reload);
-  watch("./sass/**/*.sass", serveSass);
+  watch("./src/sass/**/*.sass", serveSass);
   watch("./src/js/*.js").on('change', browserSync.reload);
   // gulp.watch("./src/css/*.css").on('change', browserSync.reload);
 };
@@ -30,7 +30,7 @@ function minify(){
 }
 
 function serveSass() {
-  return src("./sass/*.sass")
+  return src("./src/sass/*.sass")
     .pipe(sass())
     .pipe(dest("./src/css"))
     .pipe(browserSync.stream());
