@@ -15,6 +15,7 @@ function bs() {
 
   watch("./*.html").on('change', browserSync.reload);
   watch("./src/sass/**/*.sass", serveSass);
+  watch("./src/sass/**/*.scss", serveSass);
   watch("./src/js/*.js").on('change', browserSync.reload);
   // gulp.watch("./src/css/*.css").on('change', browserSync.reload);
 };
@@ -31,7 +32,7 @@ function minify(){
 }
 
 function serveSass() {
-  return src("./src/sass/*.sass")
+  return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
     .pipe(sass({
       outputStyle: 'expanded',
     }))
