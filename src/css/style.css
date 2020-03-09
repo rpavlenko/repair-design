@@ -592,16 +592,16 @@ body {
   }
 }
 
-@media screen and (max-width: 1390px) {
-  html {
-    font-size: 12px;
-  }
+@media screen and (max-width: 1340px) {
   .nav__item {
-    margin-right: 2.85rem;
+    margin-right: 1rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
   .nav__item {
     margin-right: 1rem;
   }
@@ -610,6 +610,12 @@ body {
   }
   .hero__content {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .nav {
+    display: none;
   }
 }
 
@@ -645,6 +651,15 @@ body {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
+  }
+}
+
+@media screen and (max-width: 346px) {
+  html {
+    font-size: 11px;
+  }
+  .hero {
+    height: 75vh;
   }
 }
 
