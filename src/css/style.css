@@ -355,7 +355,7 @@ template {
 }
 
 .button {
-  padding: 11px 24px;
+  padding: 11px 22px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -387,7 +387,7 @@ template {
 .container {
   width: 85%;
   max-width: 1256px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 *, *:before, *:after {
@@ -439,7 +439,8 @@ body {
   align-items: center;
 }
 
-.logo {
+.menu__logo {
+  margin-right: 4.9rem;
   font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase;
@@ -471,7 +472,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 100px;
   background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
   height: 100vh;
   color: #fff;
@@ -502,7 +502,7 @@ body {
 }
 
 .hero__button {
-  margin-right: 15px;
+  margin-right: 1.071rem;
   padding: 20px 29px;
 }
 
@@ -524,19 +524,22 @@ body {
   min-width: 17.6rem;
   min-height: 6.92rem;
   background-color: #131313;
+  font-family: 'Yeseva One', cursive;
+  font-size: 12px;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
 }
 
 .hero__scroll-down::after {
+  margin-left: 1.15rem;
+  margin-top: -0.1rem;
   content: '';
   background: url("../img/arrow-down.svg") no-repeat center;
   width: 30px;
   height: 30px;
   border: 2px solid #E3B873;
   border-radius: 50%;
-  margin-left: 12px;
 }
 
 .instagram {
@@ -547,6 +550,7 @@ body {
 }
 
 .instagram__link {
+  margin-top: -1.5rem;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -562,11 +566,11 @@ body {
   width: 50px;
   height: 1px;
   background-color: #E3B873;
-  margin-left: 8px;
+  margin-left: 0.76rem;
 }
 
 .title {
-  margin: 0;
+  margin-top: 0.85rem;
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 2.857rem;
@@ -578,24 +582,40 @@ body {
   color: #E3B873;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1400px) {
+  .container {
+    margin-left: 5.8rem;
+    max-width: 100%;
+  }
+  .nav__item {
+    margin-right: 2.85rem;
+  }
+}
+
+@media screen and (max-width: 1390px) {
   html {
     font-size: 12px;
   }
   .nav__item {
-    margin-right: 1rem;
+    margin-right: 2.85rem;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .nav {
-    display: none;
+@media screen and (max-width: 1200px) {
+  .nav__item {
+    margin-right: 1rem;
   }
   .hero__instagram {
     display: none;
   }
   .hero__content {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .nav {
+    display: none;
   }
 }
 
@@ -628,7 +648,7 @@ body {
   }
 }
 
-@media screen and (max-height: 520px) {
+@media screen and (max-height: 580px) {
   .hero__scroll-down {
     display: none;
   }

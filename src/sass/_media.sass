@@ -1,18 +1,29 @@
-@media screen and ( max-width:  1200px)
+@media screen and (min-width:  1400px)
+  .container
+    margin-left: 5.8rem
+    max-width: 100%
+  .nav
+    &__item
+      margin-right: 2.85rem    
+@media screen and (max-width:  1390px)
   html
     font-size: 12px
   .nav
     &__item
-      margin-right: 1rem  
-@media screen and ( max-width:  992px)
+      margin-right: 2.85rem   
+@media screen and (max-width:  1200px)
   .nav
-    display: none
+    &__item
+      margin-right: 1rem 
   .hero
     &__instagram
       display: none
     &__content
       margin-left: 0
-@media screen and ( max-width:  570px) 
+@media screen and (max-width:  969px)
+  .nav      
+    display: none
+@media screen and (max-width:  570px) 
   .contacts
     &__phone
       margin-right: 0
@@ -34,7 +45,7 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem   
-@media screen and ( max-height:  520px)  
+@media screen and (max-height:  580px)  
   .hero
     &__scroll-down
       display: none     
