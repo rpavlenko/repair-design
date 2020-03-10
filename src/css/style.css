@@ -587,6 +587,9 @@ body {
     margin-left: 5.8rem;
     max-width: 85%;
   }
+  .container__control {
+    margin: 0 auto;
+  }
   .nav__item {
     margin-right: 2.94rem;
   }
