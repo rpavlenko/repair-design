@@ -474,6 +474,10 @@ img {
   margin-right: 45px;
 }
 
+.contacts__button {
+  font-size: 0.97rem;
+}
+
 .hero {
   position: relative;
   display: flex;
@@ -510,7 +514,7 @@ img {
 }
 
 .hero__button {
-  margin-right: 1.071rem;
+  margin-right: 1.07rem;
   padding: 20px 29px;
 }
 
@@ -587,6 +591,7 @@ img {
 }
 
 .title--primary {
+  font-family: 'Futura Demi', cursive;
   color: #E3B873;
 }
 
@@ -645,13 +650,25 @@ img {
 }
 
 @media screen and (min-width: 1400px) {
-  .container {
+  .container__header {
     margin-left: 5.8rem;
     max-width: 85%;
+  }
+  .container__types {
     margin: 0 auto;
+  }
+  .menu__logo {
+    margin: 0;
   }
   .nav__item {
     margin-right: 2.94rem;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 33%;
   }
 }
 
