@@ -437,7 +437,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1256px;
 }
 
 .menu__logo {
@@ -586,7 +585,7 @@ body {
 @media screen and (min-width: 1400px) {
   .container {
     margin-left: 5.8rem;
-    max-width: 100%;
+    max-width: 85%;
   }
   .nav__item {
     margin-right: 2.94rem;
