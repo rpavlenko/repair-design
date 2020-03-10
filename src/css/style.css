@@ -437,10 +437,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1256px;
 }
 
 .menu__logo {
-  margin-right: 4.9rem;
+  margin-right: 2.9rem;
   font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase;
@@ -588,7 +589,7 @@ body {
     max-width: 100%;
   }
   .nav__item {
-    margin-right: 2.85rem;
+    margin-right: 2.94rem;
   }
 }
 
