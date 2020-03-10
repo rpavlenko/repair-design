@@ -598,7 +598,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1256px) {
   html {
     font-size: 12px;
   }
@@ -654,7 +654,7 @@ body {
   }
 }
 
-@media screen and (max-width: 346px) {
+@media screen and (max-width: 392px) {
   html {
     font-size: 11px;
   }
