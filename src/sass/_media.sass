@@ -76,11 +76,41 @@
       display: block
       min-width: 22.86rem
       margin-bottom: 1.85rem
-@media screen and (max-width:  392px)
+@media screen and (max-width: 375px)
   html
-    font-size: 11px
+    font-size: 12px
+  .header
+    padding: 0  
+  .container
+    margin: 0
+    &__header
+      margin: 0 auto
+      max-width: 100%
+  .menu
+    &__header
+      height: 57px
+    &__logo
+      margin-left: -0.9rem
+      margin-right: 0  
+      font-family: "Futura Demi", cursive
+      font-size: 1rem
   .hero
-     height: 85vh
+    &__content
+      margin-top: 8.3rem
+      margin-left: -1rem
+    &__title
+      font-size: 1.91rem
+    &__text
+      margin-bottom: 2.7rem
+      font-size: 1.5rem
+      min-width: 26.75rem
+      line-height: 135.84%;    
+    &__button
+      min-width: 28.16rem
+      font-size: 1.08rem
+      padding: 1.58rem 5.83rem
+      margin-bottom: 1.8rem
+
 @media screen and (max-height:  580px)  
   .hero
     &__scroll-down

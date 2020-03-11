@@ -514,8 +514,10 @@ img {
 }
 
 .hero__button {
-  margin-right: 1.07rem;
-  padding: 20px 29px;
+  margin-right: 1.1rem;
+  padding: 1.285rem 1.928rem;
+  font-size: 0.93rem;
+  font-family: 'Futura Demi', cursive;
 }
 
 .hero__instagram {
@@ -591,7 +593,6 @@ img {
 }
 
 .title--primary {
-  font-family: 'Futura Demi', cursive;
   color: #E3B873;
 }
 
@@ -756,12 +757,47 @@ img {
   }
 }
 
-@media screen and (max-width: 392px) {
+@media screen and (max-width: 375px) {
   html {
-    font-size: 11px;
+    font-size: 12px;
   }
-  .hero {
-    height: 85vh;
+  .header {
+    padding: 0;
+  }
+  .container {
+    margin: 0;
+  }
+  .container__header {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .menu__header {
+    height: 57px;
+  }
+  .menu__logo {
+    margin-left: -0.9rem;
+    margin-right: 0;
+    font-family: "Futura Demi", cursive;
+    font-size: 1rem;
+  }
+  .hero__content {
+    margin-top: 8.3rem;
+    margin-left: -1rem;
+  }
+  .hero__title {
+    font-size: 1.91rem;
+  }
+  .hero__text {
+    margin-bottom: 2.7rem;
+    font-size: 1.5rem;
+    min-width: 26.75rem;
+    line-height: 135.84%;
+  }
+  .hero__button {
+    min-width: 28.16rem;
+    font-size: 1.08rem;
+    padding: 1.58rem 5.83rem;
+    margin-bottom: 1.8rem;
   }
 }
 
