@@ -55,6 +55,8 @@
     &__card
       margin-bottom: 5.7rem          
 @media screen and (max-width:  570px) 
+  html
+    font-size: 12px
   .contacts
     &__phone
       margin-right: 0
@@ -63,53 +65,35 @@
     &__button
       display: none
   .title
-    font-size: 1.64rem
+    font-size: 1.91rem
   .hero
     &__scroll-down
       display: none
     &__content
-      max-width: 22.86rem
-    &__text
-      font-size: 1.29rem
-      margin-bottom: 2.28rem
-    &__button
-      display: block
-      min-width: 22.86rem
-      margin-bottom: 1.85rem
-@media screen and (max-width: 375px)
-  html
-    font-size: 12px
-  .header
-    padding: 0  
-  .container
-    margin: 0
-    &__header
-      margin: 0 auto
-  .menu
-    &__header
-      height: 57px
-    &__logo
-      margin-left: -0.9rem
-      margin-right: 0  
-      font-family: "Futura Demi", cursive
-      font-size: 1rem
-  .hero
-    &__content
+      max-width: 26.75rem
       margin-top: 8.3rem
       margin-left: -1rem
-    &__title
-      font-size: 1.91rem
     &__text
       margin-bottom: 2.7rem
       font-size: 1.5rem
-      min-width: 26.75rem
-      line-height: 135.84%;    
+      line-height: 135.84%; 
     &__button
-      min-width: 28.16rem
+      display: block
+      min-width: 28.21rem
       font-size: 1.08rem
       padding: 1.58rem 5.83rem
       margin-bottom: 1.8rem
-
+@media screen and (max-width: 360px)
+  html
+    font-size: 10px
+  .hero
+    &__content
+      max-width: 22.86rem
+    &__button
+      min-width: 26.75rem
+      font-size: 1.08rem
+      padding: 1.58rem 5.83rem
+      margin-bottom: 1.8rem
 @media screen and (max-height:  580px)  
   .hero
     &__scroll-down
