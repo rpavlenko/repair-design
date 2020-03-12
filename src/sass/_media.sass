@@ -99,20 +99,28 @@
       margin-bottom: 1.8rem
 @media screen and (max-width: 375px)
   .container
-    &__types
+    &__types, &__project 
       width: 90%
   .project
     background-color: $fourthdary
   .section-title
     &__heading
-      font-size: 1.83rem
+      font-size: 1.84rem
+      // margin-left: -0.2rem
       &--white
         color: $light
     &__image
       margin-top: 1.29rem
     &__description
+      margin-top: 1.7rem
+      margin-bottom: 3.25rem
       &--white
-        color: $light  
+        color: $light
+        font-style: normal
+        font-weight: normal
+        font-size: 1.25rem
+        max-width: 25.5rem
+        line-height: 135.84%
   .types
     &__section-title
       margin-bottom: 3.333rem
@@ -121,15 +129,46 @@
   .project
     &__card
       margin-bottom: 5.65rem
+      &--mobi
+        margin-bottom: 6.66rem
   .card
     &__text
       margin-top: -11.7rem
       padding: 1.79rem 2.65rem;
       max-width: 22.5rem
+      &--project
+        height: 14.75rem
+        padding-top: 1.5rem
+        padding-right: 3.416rem
+        padding-bottom: 2.58rem
+        padding-left: 2.48rem
+        &-standard
+          height: 20.08rem
+          margin-top: -11.6rem;
+          padding-top: 1.35rem
+          padding-right: 3.416rem
+          padding-bottom: 3.41rem
+          padding-left: 2.48rem
+          font-style: normal
+          font-weight: normal
+          font-size: 13px
+          line-height: 169.8%
+        &-full
+          margin-top: -11.84rem;
+          padding-top: 1.45rem
+          padding-right: 3.416rem
+          padding-bottom: 3.41rem
+          padding-left: 2.48rem
+          height: 30rem
     &__title
       font-size: 1.25rem    
-      margin-bottom: .65rem
+      margin-left: 0
+      margin-bottom: .58rem
       color: $thirdary
+      &--design
+        margin-left: -0.1rem
+      &--minimal
+        margin-bottom: 1rem
     &__item
       font-size: 1.08rem
       line-height: 170%
@@ -138,6 +177,25 @@
       text-align: center
       font-size: 1.25rem
       padding: 0.88rem 3rem
+      &--types
+        padding: 0.98rem 2.65rem
+      &--design
+        font-size: 1.25rem
+        padding: 0.94rem 2.45rem;
+      &--smaller-minimal
+        padding: 1rem 4.3rem 0.66rem 3.85rem
+        bottom: -1.45rem 
+      &--smaller-standard
+        padding: 0.8rem 3.92rem 0.58rem 3.80rem;
+        bottom: -1.40rem
+      &--smaller-full
+        padding: 0.916rem 3.93rem 0.66rem 3.85rem
+        bottom: -1.45rem       
+    &__list
+      padding: 0 0 0 0.8rem
+      &--project
+        padding: 0 0 0 1rem
+        line-height: 169.8%;
     &--background
       &::before
         display: none    

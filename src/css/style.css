@@ -995,14 +995,14 @@ img {
 }
 
 @media screen and (max-width: 375px) {
-  .container__types {
+  .container__types, .container__project {
     width: 90%;
   }
   .project {
     background-color: #181818;
   }
   .section-title__heading {
-    font-size: 1.83rem;
+    font-size: 1.84rem;
   }
   .section-title__heading--white {
     color: #fff;
@@ -1010,8 +1010,17 @@ img {
   .section-title__image {
     margin-top: 1.29rem;
   }
+  .section-title__description {
+    margin-top: 1.7rem;
+    margin-bottom: 3.25rem;
+  }
   .section-title__description--white {
     color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    max-width: 25.5rem;
+    line-height: 135.84%;
   }
   .types__section-title {
     margin-bottom: 3.333rem;
@@ -1022,15 +1031,52 @@ img {
   .project__card {
     margin-bottom: 5.65rem;
   }
+  .project__card--mobi {
+    margin-bottom: 6.66rem;
+  }
   .card__text {
     margin-top: -11.7rem;
     padding: 1.79rem 2.65rem;
     max-width: 22.5rem;
   }
+  .card__text--project {
+    height: 14.75rem;
+    padding-top: 1.5rem;
+    padding-right: 3.416rem;
+    padding-bottom: 2.58rem;
+    padding-left: 2.48rem;
+  }
+  .card__text--project-standard {
+    height: 20.08rem;
+    margin-top: -11.6rem;
+    padding-top: 1.35rem;
+    padding-right: 3.416rem;
+    padding-bottom: 3.41rem;
+    padding-left: 2.48rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 169.8%;
+  }
+  .card__text--project-full {
+    margin-top: -11.84rem;
+    padding-top: 1.45rem;
+    padding-right: 3.416rem;
+    padding-bottom: 3.41rem;
+    padding-left: 2.48rem;
+    height: 30rem;
+  }
   .card__title {
     font-size: 1.25rem;
-    margin-bottom: .65rem;
+    margin-left: 0;
+    margin-bottom: .58rem;
     color: #363636;
+  }
+  .card__title--design {
+    margin-left: -0.1rem;
+  }
+  .card__title--minimal {
+    margin-bottom: 1rem;
   }
   .card__item {
     font-size: 1.08rem;
@@ -1041,6 +1087,32 @@ img {
     text-align: center;
     font-size: 1.25rem;
     padding: 0.88rem 3rem;
+  }
+  .card__pricetag--types {
+    padding: 0.98rem 2.65rem;
+  }
+  .card__pricetag--design {
+    font-size: 1.25rem;
+    padding: 0.94rem 2.45rem;
+  }
+  .card__pricetag--smaller-minimal {
+    padding: 1rem 4.3rem 0.66rem 3.85rem;
+    bottom: -1.45rem;
+  }
+  .card__pricetag--smaller-standard {
+    padding: 0.8rem 3.92rem 0.58rem 3.80rem;
+    bottom: -1.40rem;
+  }
+  .card__pricetag--smaller-full {
+    padding: 0.916rem 3.93rem 0.66rem 3.85rem;
+    bottom: -1.45rem;
+  }
+  .card__list {
+    padding: 0 0 0 0.8rem;
+  }
+  .card__list--project {
+    padding: 0 0 0 1rem;
+    line-height: 169.8%;
   }
   .card--background::before {
     display: none;
