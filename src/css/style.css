@@ -684,6 +684,10 @@ img {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
+.card__text--design {
+  padding: 1.79rem 2.55rem;
+}
+
 .card__title {
   margin-top: 0;
   margin-bottom: 0.69rem;
@@ -714,6 +718,10 @@ img {
   padding: 0 0 0 1rem;
 }
 
+.card__list--capital {
+  padding: 0 0 0 1rem;
+}
+
 .card__pricetag {
   position: absolute;
   left: 0;
@@ -731,6 +739,11 @@ img {
 .card__pricetag--types {
   bottom: -2rem;
   padding: 1.214rem 2.75rem;
+}
+
+.card__pricetag--design {
+  padding-top: 1rem;
+  padding-left: 3rem;
 }
 
 .card__power {
