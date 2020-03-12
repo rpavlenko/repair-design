@@ -38,6 +38,9 @@
 @media screen and (max-width:  969px)
   .nav      
     display: none
+  .modal
+    &__dialog
+      max-width: 100%   
 @media screen and (max-width: 760px)  
   .row
     flex-direction: column
@@ -61,7 +64,10 @@
     &__section-title
       color: $light
     &__card
-      margin-bottom: 5.7rem          
+      margin-bottom: 5.7rem
+  .modal
+    &__dialog
+      max-width: 60%          
 @media screen and (max-width:  570px) 
   html
     font-size: 12px

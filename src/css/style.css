@@ -881,6 +881,9 @@ img {
   .nav {
     display: none;
   }
+  .modal__dialog {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -911,6 +914,9 @@ img {
   }
   .design__card {
     margin-bottom: 5.7rem;
+  }
+  .modal__dialog {
+    max-width: 60%;
   }
 }
 
