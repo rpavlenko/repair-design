@@ -16,7 +16,7 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
-    flex-basis: 33%
+    flex-basis: 32%
 @media screen and (max-width:  1340px)
   .nav
     &__item
@@ -42,12 +42,20 @@
   .row
     flex-direction: column
     align-items: center
+  .section-title
+    &__description
+      max-width: 37.5rem    
   .types
     &__card
       margin-bottom: 5rem
+  .project
+    &__card
+      margin-bottom: 5rem    
   .card
     &__text
       margin-left: 0
+    &__description
+      max-width: 27rem  
   .design
     background-color: $dark
     &__section-title
@@ -76,13 +84,57 @@
     &__text
       margin-bottom: 2.7rem
       font-size: 1.5rem
-      line-height: 135.84%; 
+      line-height: 135.84%
     &__button
       display: block
       min-width: 28.21rem
       font-size: 1.08rem
       padding: 1.58rem 5.83rem
       margin-bottom: 1.8rem
+@media screen and (max-width: 375px)
+  .container
+    &__types
+      width: 90%
+  .project
+    background-color: $fourthdary
+  .section-title
+    &__heading
+      font-size: 1.83rem
+      &--white
+        color: $light
+    &__image
+      margin-top: 1.29rem
+    &__description
+      &--white
+        color: $light  
+  .types
+    &__section-title
+      margin-bottom: 3.333rem
+    &__card
+      margin-bottom: 5.65rem  
+  .project
+    &__card
+      margin-bottom: 5.65rem
+  .card
+    &__text
+      margin-top: -11.7rem
+      padding: 1.79rem 2.65rem;
+      max-width: 22.5rem
+    &__title
+      font-size: 1.25rem    
+      margin-bottom: .65rem
+      color: $thirdary
+    &__item
+      font-size: 1.08rem
+      line-height: 170%
+    &__pricetag
+      bottom: -1rem  
+      text-align: center
+      font-size: 1.25rem
+      padding: 0.88rem 3rem
+    &--background
+      &::before
+        display: none    
 @media screen and (max-width: 360px)
   html
     font-size: 10px

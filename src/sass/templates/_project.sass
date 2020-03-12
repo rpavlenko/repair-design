@@ -1,0 +1,31 @@
+.section
+  &-title    
+    &__description
+      margin: 0 auto
+      margin-top: 1.285rem
+      margin-bottom: 3.45rem
+      max-width: 52.92rem
+      text-align: center
+      font-size: 1.428rem
+      color: $thirdary
+      text-transform: none
+      line-height: 1.9rem
+      font-family: 'Futura Book', sans-serif
+      text-align: center
+.card
+  &__image
+    display: block
+  &--background
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: rgba($dark, 0.3)
+  &__pricetag
+    &--smaller
+      padding: 1.1rem 6rem 1.1rem 2.4rem
+      
