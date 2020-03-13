@@ -16,7 +16,7 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
-    flex-basis: 32%
+    flex-basis: 32%  
 @media screen and (max-width:  1340px)
   .nav
     &__item
@@ -55,10 +55,10 @@
     &__card
       margin-bottom: 5rem    
   .card
-    &__text
-      margin-left: 0
     &__description
-      max-width: 27rem  
+      max-width: 27rem 
+    &__text
+      margin-left: 0   
   .design
     background-color: $dark
     &__section-title
@@ -106,11 +106,8 @@
   .section-title
     &__heading
       font-size: 1.84rem
-      // margin-left: -0.2rem
       &--white
         color: $light
-    &__image
-      margin-top: 1.29rem
     &__description
       margin-top: 1.7rem
       margin-bottom: 3.25rem
@@ -121,84 +118,51 @@
         font-size: 1.25rem
         max-width: 25.5rem
         line-height: 135.84%
-  .types
-    &__section-title
-      margin-bottom: 3.333rem
-    &__card
-      margin-bottom: 5.65rem  
-  .project
-    &__card
-      margin-bottom: 5.65rem
-      &--mobi
-        margin-bottom: 6.66rem
   .card
     &__text
-      margin-top: -11.7rem
-      padding: 1.79rem 2.65rem;
+      margin-top: -12rem
+      padding: 1.84rem 2.5rem
       max-width: 22.5rem
-      &--project
-        height: 14.75rem
-        padding-top: 1.5rem
-        padding-right: 3.416rem
-        padding-bottom: 2.58rem
-        padding-left: 2.48rem
-        &-standard
-          height: 20.08rem
-          margin-top: -11.6rem;
-          padding-top: 1.35rem
-          padding-right: 3.416rem
-          padding-bottom: 3.41rem
-          padding-left: 2.48rem
-          font-style: normal
-          font-weight: normal
-          font-size: 13px
-          line-height: 169.8%
-        &-full
-          margin-top: -11.84rem;
-          padding-top: 1.45rem
-          padding-right: 3.416rem
-          padding-bottom: 3.41rem
-          padding-left: 2.48rem
-          height: 30rem
     &__title
       font-size: 1.25rem    
       margin-left: 0
       margin-bottom: .58rem
       color: $thirdary
-      &--design
-        margin-left: -0.1rem
-      &--minimal
-        margin-bottom: 1rem
     &__item
       font-size: 1.08rem
       line-height: 170%
     &__pricetag
-      bottom: -1rem  
+      bottom: -1.79rem  
       text-align: center
       font-size: 1.25rem
-      padding: 0.88rem 3rem
-      &--types
-        padding: 0.98rem 2.65rem
-      &--design
-        font-size: 1.25rem
-        padding: 0.94rem 2.45rem;
-      &--smaller-minimal
-        padding: 1rem 4.3rem 0.66rem 3.85rem
-        bottom: -1.45rem 
-      &--smaller-standard
-        padding: 0.8rem 3.92rem 0.58rem 3.80rem;
-        bottom: -1.40rem
-      &--smaller-full
-        padding: 0.916rem 3.93rem 0.66rem 3.85rem
-        bottom: -1.45rem       
+      padding: 0.917rem 0
+      width: 15.8rem
     &__list
-      padding: 0 0 0 0.8rem
+      margin-bottom: 1.55rem
+      padding: 0 0 0 1.1rem
+      line-height: 1.9rem
+      letter-spacing: 0
       &--project
+        margin-bottom: 1rem;
         padding: 0 0 0 1rem
-        line-height: 169.8%;
+        line-height: 189.8%
     &--background
       &::before
-        display: none    
+        display: none
+  .types
+    &__section-title
+      margin-bottom: 2.35rem
+    &__card
+      padding-top: 1.65rem      
+  .project
+    &__card
+      margin-bottom: 5.65rem
+      &--text
+        padding: 1.87rem 2.5rem
+      &--mobi
+        margin-bottom: 6.8rem
+    &__pricetag
+      padding: 0.75rem 0;              
 @media screen and (max-width: 360px)
   html
     font-size: 10px

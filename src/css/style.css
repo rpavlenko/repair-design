@@ -495,6 +495,75 @@ img {
   background-color: #E3B873;
 }
 
+.section-title__description {
+  margin: 0 auto;
+  margin-top: 1.285rem;
+  margin-bottom: 3.45rem;
+  max-width: 52.92rem;
+  text-align: center;
+  font-size: 1.428rem;
+  color: #363636;
+  text-transform: none;
+  line-height: 1.9rem;
+  font-family: 'Futura Book', sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 33%;
+}
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -9.5rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.285rem;
+  font-weight: normal;
+}
+
+.card__list {
+  padding: 0 0 0 1rem;
+  margin: 0;
+  margin-bottom: 2.5rem;
+  font-size: 1.07rem;
+  line-height: 1.79rem;
+  color: #959595;
+}
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -1.79rem;
+  width: 16.285rem;
+  font-size: 1.285rem;
+  font-family: 'Yeseva One', cursive;
+  line-height: 1.785rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+}
+
+.card__power {
+  font-size: 0.71rem;
+}
+
 .header {
   position: fixed;
   left: 0;
@@ -661,123 +730,27 @@ img {
 }
 
 .types__section-title {
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
 }
 
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.col {
-  flex-basis: 33%;
-}
-
-.card__text {
-  position: relative;
-  max-width: 23.6rem;
-  margin: 0 auto;
-  margin-top: -9.1rem;
-  padding: 1.79rem 2.14rem;
-  background-color: #fff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-}
-
-.card__text--design {
-  padding: 1.79rem 2.55rem;
-}
-
-.card__title {
-  margin-top: 0;
-  margin-bottom: 0.69rem;
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.285rem;
-  font-weight: normal;
-}
-
-.card__title--cosmetic {
-  padding-left: 0;
-  margin-bottom: 0.6rem;
-}
-
-.card__title--capital {
-  margin-bottom: 0.6rem;
-}
-
-.card__list {
-  padding: 0 0 0 1.2rem;
-  margin: 0;
-  margin-bottom: 2.5rem;
-  font-size: 1.07rem;
-  line-height: 1.79rem;
-  color: #959595;
-}
-
-.card__list--cosmetic {
-  padding: 0 0 0 1rem;
-}
-
-.card__list--capital {
-  padding: 0 0 0 1rem;
-}
-
-.card__pricetag {
-  position: absolute;
-  left: 0;
-  bottom: -1.79rem;
-  padding: 1.214rem 2.6rem;
-  font-size: 1.285rem;
-  font-family: 'Yeseva One', cursive;
-  line-height: 1.785rem;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #E3B873;
-  color: #fff;
-}
-
-.card__pricetag--types {
-  bottom: -2rem;
-  padding: 1.214rem 2.75rem;
-}
-
-.card__pricetag--design {
+.types__card {
   padding-top: 1rem;
-  padding-left: 3rem;
 }
 
-.card__power {
-  font-size: 0.71rem;
-}
-
-.container__project {
-  max-width: 1236px;
-  width: 100%;
-}
-
-.section-title__description {
-  margin: 0 auto;
-  margin-top: 1.285rem;
-  margin-bottom: 3.45rem;
-  max-width: 52.92rem;
-  text-align: center;
-  font-size: 1.428rem;
-  color: #363636;
-  text-transform: none;
-  line-height: 1.9rem;
-  font-family: 'Futura Book', sans-serif;
+.types__pricetag {
+  padding: 1.1rem 0;
   text-align: center;
 }
 
-.card__image {
+.project__image {
   display: block;
 }
 
-.card--background {
+.project__background {
   position: relative;
 }
 
-.card--background::before {
+.project__background::before {
   content: '';
   position: absolute;
   top: 0;
@@ -787,8 +760,9 @@ img {
   background-color: rgba(19, 19, 19, 0.3);
 }
 
-.card__pricetag--smaller {
-  padding: 1.1rem 6rem 1.1rem 2.4rem;
+.project__pricetag {
+  padding: 1.15rem 2.35rem;
+  text-align: left;
 }
 
 .modal {
@@ -937,11 +911,11 @@ img {
   .project__card {
     margin-bottom: 5rem;
   }
-  .card__text {
-    margin-left: 0;
-  }
   .card__description {
     max-width: 27rem;
+  }
+  .card__text {
+    margin-left: 0;
   }
   .design {
     background-color: #131313;
@@ -1007,9 +981,6 @@ img {
   .section-title__heading--white {
     color: #fff;
   }
-  .section-title__image {
-    margin-top: 1.29rem;
-  }
   .section-title__description {
     margin-top: 1.7rem;
     margin-bottom: 3.25rem;
@@ -1022,49 +993,10 @@ img {
     max-width: 25.5rem;
     line-height: 135.84%;
   }
-  .types__section-title {
-    margin-bottom: 3.333rem;
-  }
-  .types__card {
-    margin-bottom: 5.65rem;
-  }
-  .project__card {
-    margin-bottom: 5.65rem;
-  }
-  .project__card--mobi {
-    margin-bottom: 6.66rem;
-  }
   .card__text {
-    margin-top: -11.7rem;
-    padding: 1.79rem 2.65rem;
+    margin-top: -12rem;
+    padding: 1.84rem 2.5rem;
     max-width: 22.5rem;
-  }
-  .card__text--project {
-    height: 14.75rem;
-    padding-top: 1.5rem;
-    padding-right: 3.416rem;
-    padding-bottom: 2.58rem;
-    padding-left: 2.48rem;
-  }
-  .card__text--project-standard {
-    height: 20.08rem;
-    margin-top: -11.6rem;
-    padding-top: 1.35rem;
-    padding-right: 3.416rem;
-    padding-bottom: 3.41rem;
-    padding-left: 2.48rem;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 169.8%;
-  }
-  .card__text--project-full {
-    margin-top: -11.84rem;
-    padding-top: 1.45rem;
-    padding-right: 3.416rem;
-    padding-bottom: 3.41rem;
-    padding-left: 2.48rem;
-    height: 30rem;
   }
   .card__title {
     font-size: 1.25rem;
@@ -1072,50 +1004,48 @@ img {
     margin-bottom: .58rem;
     color: #363636;
   }
-  .card__title--design {
-    margin-left: -0.1rem;
-  }
-  .card__title--minimal {
-    margin-bottom: 1rem;
-  }
   .card__item {
     font-size: 1.08rem;
     line-height: 170%;
   }
   .card__pricetag {
-    bottom: -1rem;
+    bottom: -1.79rem;
     text-align: center;
     font-size: 1.25rem;
-    padding: 0.88rem 3rem;
-  }
-  .card__pricetag--types {
-    padding: 0.98rem 2.65rem;
-  }
-  .card__pricetag--design {
-    font-size: 1.25rem;
-    padding: 0.94rem 2.45rem;
-  }
-  .card__pricetag--smaller-minimal {
-    padding: 1rem 4.3rem 0.66rem 3.85rem;
-    bottom: -1.45rem;
-  }
-  .card__pricetag--smaller-standard {
-    padding: 0.8rem 3.92rem 0.58rem 3.80rem;
-    bottom: -1.40rem;
-  }
-  .card__pricetag--smaller-full {
-    padding: 0.916rem 3.93rem 0.66rem 3.85rem;
-    bottom: -1.45rem;
+    padding: 0.917rem 0;
+    width: 15.8rem;
   }
   .card__list {
-    padding: 0 0 0 0.8rem;
+    margin-bottom: 1.55rem;
+    padding: 0 0 0 1.1rem;
+    line-height: 1.9rem;
+    letter-spacing: 0;
   }
   .card__list--project {
+    margin-bottom: 1rem;
     padding: 0 0 0 1rem;
-    line-height: 169.8%;
+    line-height: 189.8%;
   }
   .card--background::before {
     display: none;
+  }
+  .types__section-title {
+    margin-bottom: 2.35rem;
+  }
+  .types__card {
+    padding-top: 1.65rem;
+  }
+  .project__card {
+    margin-bottom: 5.65rem;
+  }
+  .project__card--text {
+    padding: 1.87rem 2.5rem;
+  }
+  .project__card--mobi {
+    margin-bottom: 6.8rem;
+  }
+  .project__pricetag {
+    padding: 0.75rem 0;
   }
 }
 
