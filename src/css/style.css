@@ -524,7 +524,7 @@ img {
   max-width: 23.6rem;
   margin: 0 auto;
   margin-top: -9.5rem;
-  padding: 1.79rem 2.14rem;
+  padding: 1.78rem 2.07rem 2rem 2.1rem;
   background-color: #ffffff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
@@ -972,9 +972,6 @@ img {
   .container__types, .container__project {
     width: 90%;
   }
-  .project {
-    background-color: #181818;
-  }
   .section-title__heading {
     font-size: 1.84rem;
   }
@@ -1034,6 +1031,9 @@ img {
   }
   .types__card {
     padding-top: 1.65rem;
+  }
+  .project {
+    background-color: #181818;
   }
   .project__card {
     margin-bottom: 5.65rem;
