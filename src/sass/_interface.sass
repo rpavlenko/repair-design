@@ -18,6 +18,36 @@
     border: 1px solid $light  
     background-color: transparent
     color: $light
+#button 
+  display: inline-block
+  background-color: $primary
+  width: 50px
+  height: 50px
+  text-align: center
+  border-radius: 4px
+  position: fixed
+  bottom: 30px
+  right: 30px
+  transition: background-color .3s, opacity .5s, visibility .5s
+  opacity: 0
+  visibility: hidden
+  z-index: 1000
+  &::after 
+    content: "\f077"
+    font-family: FontAwesome
+    font-weight: normal
+    font-style: normal
+    font-size: 2em
+    line-height: 50px
+    color: $light
+  &:hover
+    cursor: pointer
+    background-color: #333
+  &:active
+    background-color: #555  
+  &.show
+    opacity: 1
+    visibility: visible    
 .label
   &--light
     font-size: 1.07rem
@@ -26,7 +56,7 @@
   padding: 0.5rem 0
   background-color: transparent
   border: none
-  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
   font-size: 1.285rem
   color: $light  
   &::placeholder
@@ -50,6 +80,9 @@
       border: 1px solid $primary
       border-radius: 1px
       cursor: pointer
+
+
+  
 
 
 
