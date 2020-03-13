@@ -46,7 +46,7 @@ $(document).ready(function () {
 $("#button").on("click", function () {
   $("html").animate({
     scrollTop: 0
-  }, "slow");
+  }, 1500);
 });
 
 var btn = $('#button');

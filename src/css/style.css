@@ -392,8 +392,8 @@ template {
   text-align: center;
   border-radius: 4px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 15px;
+  right: 15px;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
@@ -968,6 +968,13 @@ img {
   }
   .modal__dialog {
     max-width: 60%;
+  }
+  #button {
+    width: 3.33rem;
+    height: 3.33rem;
+  }
+  #button:after {
+    line-height: 3.33rem;
   }
 }
 
