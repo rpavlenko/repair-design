@@ -41,6 +41,22 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
 
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+  });
+    var next = $('.swiper-button-next');
+    var prev = $('.swiper-button-prev');
+    var bullets = $('.swiper-pagination');
+    next.css('left', prev.width() + 30 + bullets.width() + 12);
+    bullets.css('left', 30 + prev.width());
 })
 
 $("#button").on("click", function () {
