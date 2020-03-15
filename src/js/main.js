@@ -60,8 +60,7 @@ $(document).ready(function () {
 })
 
 
-
-
+// scroll up button
 $("#button").on("click", function () {
   $("html").animate({
     scrollTop: 0
