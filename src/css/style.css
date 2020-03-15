@@ -515,6 +515,10 @@ template {
   width: 60%;
 }
 
+.col-100 {
+  display: none;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -748,6 +752,10 @@ img {
 
 .swiper-slide__value--block {
   display: block;
+}
+
+.swiper-slide__img {
+  width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -1085,6 +1093,9 @@ img {
   .swiper-button-next {
     left: auto;
   }
+  .nav {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1010px) {
@@ -1099,6 +1110,30 @@ img {
   }
   .modal__dialog {
     max-width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .row .col-40 {
+    width: 50%;
+    margin: 0;
+    order: 2;
+  }
+  .row .col-60 {
+    width: 100%;
+    order: 1;
+  }
+  .row .col-100 {
+    display: flex;
+    order: 0;
+  }
+  .swiper-slide__text {
+    flex-basis: 50%;
+  }
+  .section-title--display-none {
+    display: none;
   }
 }
 
@@ -1155,8 +1190,30 @@ img {
   .contacts__button {
     display: none;
   }
+  .row .col-40 {
+    width: 100%;
+  }
   .title {
     font-size: 1.91rem;
+  }
+  .section-title__text {
+    text-align: center;
+    width: 25rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.16rem;
+    line-height: 1.99rem;
+    margin-bottom: 3rem;
+  }
+  .section-title__word {
+    display: block;
+  }
+  .section-title__word::after {
+    display: none;
+  }
+  .completed-projects__heading--center {
+    text-align: center;
+    margin-bottom: 1.9rem;
   }
   .hero__scroll-down {
     display: none;
@@ -1178,10 +1235,27 @@ img {
     padding: 1.58rem 5.83rem;
     margin-bottom: 1.8rem;
   }
+  .swiper-slide {
+    padding-bottom: 0;
+  }
+  .swiper-slide__text {
+    margin-bottom: 2.5rem;
+  }
+  .swiper-slide__heading {
+    margin-bottom: 0.8rem;
+    font-size: 1.16rem;
+  }
+  .swiper-slide_value {
+    font-size: 1.16rem;
+  }
+  .swiper-slide__img {
+    height: 16.83rem;
+    margin-bottom: 2.75rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
-  .container__types, .container__project {
+  .container__types, .container__project, .container__completed-projects {
     width: 90%;
   }
   .section-title__heading {

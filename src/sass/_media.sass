@@ -23,7 +23,7 @@
 @media screen and (max-width:  1340px)
   .nav
     &__item
-      margin-right: 1rem    
+      margin-right: 1rem   
 @media screen and (max-width:  1260px)
   html
     font-size: 12px
@@ -44,15 +44,39 @@
         width: 5rem
       &-next
         left: auto      
-@media screen and (max-width:  1010px)
   .nav      
-    display: none      
+    display: none            
+@media screen and (max-width:  1010px)
+  .nav
+    display: none
 @media screen and (max-width:  969px)
   .nav      
     display: none
   .modal
     &__dialog
-      max-width: 100%   
+      max-width: 100%
+  .row
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .col
+      &-40
+        width: 50%
+        margin: 0
+        order: 2
+      &-60
+        width: 100%
+        order: 1
+      &-100
+        display: flex
+        order: 0
+  .swiper-slide
+    &__text
+      flex-basis: 50%      
+  .section
+    &-title
+      &--display-none
+        display: none         
 @media screen and (max-width: 760px)  
   .row
     flex-direction: column
@@ -95,8 +119,30 @@
       text-decoration: none
     &__button
       display: none
+  .row
+    .col
+      &-40
+        width: 100%      
   .title
     font-size: 1.91rem
+  .section-title
+    &__text
+      text-align: center
+      width: 25rem
+      font-style: normal
+      font-weight: normal
+      font-size: 1.16rem
+      line-height: 1.99rem
+      margin-bottom: 3rem
+    &__word
+      display: block
+      &::after
+        display: none 
+  .completed-projects
+    &__heading
+      &--center
+        text-align: center
+        margin-bottom: 1.9rem
   .hero
     &__scroll-down
       display: none
@@ -113,10 +159,24 @@
       min-width: 28.21rem
       font-size: 1.08rem
       padding: 1.58rem 5.83rem
-      margin-bottom: 1.8rem 
+      margin-bottom: 1.8rem
+  .swiper
+    &-slide
+      padding-bottom: 0
+      &__text
+        margin-bottom: 2.5rem
+      &__heading
+        margin-bottom: 0.8rem
+        font-size: 1.16rem
+      &_value
+        font-size: 1.16rem        
+      &__img
+        height: 16.83rem
+        margin-bottom: 2.75rem
+
 @media screen and (max-width: 375px)
   .container
-    &__types, &__project 
+    &__types, &__project, &__completed-projects
       width: 90%
   .section-title
     &__heading
@@ -178,7 +238,8 @@
       &--mobi
         margin-bottom: 6.8rem
     &__pricetag
-      padding: 0.75rem 0              
+      padding: 0.75rem 0
+                 
 @media screen and (max-width: 360px)
   html
     font-size: 10px
