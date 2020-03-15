@@ -761,7 +761,7 @@ img {
 .swiper-pagination-bullet {
   max-width: 0.673rem;
   max-height: 0.673rem;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .swiper-pagination-bullet-active {

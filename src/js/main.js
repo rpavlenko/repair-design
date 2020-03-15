@@ -59,6 +59,9 @@ $(document).ready(function () {
     bullets.css('left', 30 + prev.width());
 })
 
+
+
+
 $("#button").on("click", function () {
   $("html").animate({
     scrollTop: 0
