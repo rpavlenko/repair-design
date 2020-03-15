@@ -57,6 +57,7 @@ $(document).ready(function () {
     var bullets = $('.swiper-pagination');
     next.css('left', prev.width() + 30 + bullets.width() + 12);
     bullets.css('left', 30 + prev.width());
+    
 })
 
 
