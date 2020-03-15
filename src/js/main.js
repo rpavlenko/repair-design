@@ -41,7 +41,25 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
 
-  var mySwiper = new Swiper('.swiper-container', {
+  // scroll up button
+  $("#button").on("click", function () {
+    $("html").animate({
+      scrollTop: 0
+    }, 1500);
+  });
+
+  var btn = $('#button');
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  // sliders
+
+  var completedProjectsSwiper = new Swiper('.completed-projects-swiper', {
     loop: true,
     navigation: {
       nextEl: '.swiper-button-next',
@@ -52,27 +70,29 @@ $(document).ready(function () {
       type: 'bullets',
     },
   });
+
+  var sixStepsSwiper = new Swiper('.six-steps-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination-six-steps',
+      type: 'bullets',
+    },
+  });
+
+
     var next = $('.swiper-button-next');
     var prev = $('.swiper-button-prev');
     var bullets = $('.swiper-pagination');
     next.css('left', prev.width() + 30 + bullets.width() + 12);
     bullets.css('left', 30 + prev.width());
     
+    var next = $('.swiper-button-next-six-steps');
+    var prev = $('.swiper-button-prev-six-steps');
+    var bulletsSixSteps = $('.swiper-pagination-six-steps');
+    nextSixSteps.css('left', prev.width() + 30 + bulletsSixSteps.width() + 12);
+    bulletsSixSteps.css('left', 30 + prev.width());
 })
-
-
-// scroll up button
-$("#button").on("click", function () {
-  $("html").animate({
-    scrollTop: 0
-  }, 1500);
-});
-
-var btn = $('#button');
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
