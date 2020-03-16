@@ -1,14 +1,15 @@
 .six-steps
   margin-top: -500px
-  padding-top: 500px
+  padding-top: 500px 
+  color: $light
   background-color: $dark
+  // background-image: url('../img/six-steps-bg.svg')
   &__heading
-    font-family: Yeseva One
-    font-style: normal
-    font-weight: normal
+    margin-bottom: 6.571rem
+    line-height: 2.656rem
     font-size: 1.928rem
-    line-height: 2.642rem
-    text-transform: uppercase
+    &--break
+      display: block
   &__word
     display: flex
     align-items: center
@@ -17,7 +18,11 @@
       content: ""
       width: 6.571rem
       height: 2px
-      background-color: $primary
+      background-color: $primary         
+  &__title
+    margin-bottom: 1.142rem 
+    font-size: 1.071rem
+    line-height: 1.642rem
   &__subtitle
     font-family: 'Futura Book'
     font-style: normal
@@ -25,13 +30,15 @@
     font-size: 1.14rem
     line-height: 1.5rem
     text-transform: uppercase
+  &__description
+    flex-basis: 100%  
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: -1px      
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
   margin: 0
   margin-right: 1.352rem    
-
+  
 
 
 

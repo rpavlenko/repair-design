@@ -499,7 +499,7 @@ template {
 }
 
 .col-30 {
-  flex-basis: 30%;
+  width: 30%;
 }
 
 .col-40 {
@@ -804,16 +804,18 @@ img {
 .six-steps {
   margin-top: -500px;
   padding-top: 500px;
+  color: #fff;
   background-color: #131313;
 }
 
 .six-steps__heading {
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
+  margin-bottom: 6.571rem;
+  line-height: 2.656rem;
   font-size: 1.928rem;
-  line-height: 2.642rem;
-  text-transform: uppercase;
+}
+
+.six-steps__heading--break {
+  display: block;
 }
 
 .six-steps__word {
@@ -829,6 +831,12 @@ img {
   background-color: #E3B873;
 }
 
+.six-steps__title {
+  margin-bottom: 1.142rem;
+  font-size: 1.071rem;
+  line-height: 1.642rem;
+}
+
 .six-steps__subtitle {
   font-family: 'Futura Book';
   font-style: normal;
@@ -836,6 +844,10 @@ img {
   font-size: 1.14rem;
   line-height: 1.5rem;
   text-transform: uppercase;
+}
+
+.six-steps__description {
+  flex-basis: 100%;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {

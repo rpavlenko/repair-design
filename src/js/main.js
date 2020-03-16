@@ -59,23 +59,30 @@ $(document).ready(function () {
 
   // sliders
 
+
   var completedProjectsSwiper = new Swiper('.completed-projects-swiper', {
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.completed-projects-next',
+      prevEl: '.completed-projects-prev',
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.completed-projects-pagination',
       type: 'bullets',
     },
+    
   });
+  var next = $('.completed-projects-next');
+  var prev = $('.completed-projects-prev');
+  var bullets = $('.completed-projects-pagination');
+  next.css('left', prev.width() + 30 + bullets.width() + 12);
+  bullets.css('left', 30 + prev.width());
 
   var sixStepsSwiper = new Swiper('.six-steps-swiper', {
     loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-six-steps',
+      prevEl: '.swiper-button-prev-six-steps',
     },
     pagination: {
       el: '.swiper-pagination-six-steps',
@@ -83,16 +90,10 @@ $(document).ready(function () {
     },
   });
 
+  var nextSixSteps = $('.swiper-button-next-six-steps');
+  var prevSixSteps = $('.swiper-button-prev-six-steps');
+  var bulletsSixSteps = $('.swiper-pagination-six-steps');
+  nextSixSteps.css('left', prevSixSteps.width() + 30 + bulletsSixSteps.width() + 12);
+  bulletsSixSteps.css('left', 30 + prevSixSteps.width());
+});
 
-    var next = $('.swiper-button-next');
-    var prev = $('.swiper-button-prev');
-    var bullets = $('.swiper-pagination');
-    next.css('left', prev.width() + 30 + bullets.width() + 12);
-    bullets.css('left', 30 + prev.width());
-    
-    var next = $('.swiper-button-next-six-steps');
-    var prev = $('.swiper-button-prev-six-steps');
-    var bulletsSixSteps = $('.swiper-pagination-six-steps');
-    nextSixSteps.css('left', prev.width() + 30 + bulletsSixSteps.width() + 12);
-    bulletsSixSteps.css('left', 30 + prev.width());
-})
