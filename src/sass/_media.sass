@@ -23,6 +23,12 @@
     justify-content: space-between
     align-items: center
     flex-basis: 32%  
+@media screen and (max-width:  1439px)
+  .steps
+    &__wrapper
+      width: 95%
+    &__item
+      margin-right: 5rem  
 @media screen and (max-width:  1340px)
   .nav
     &__item
@@ -44,10 +50,7 @@
       width: 55%
     &-62  
       &__six-steps
-        width: 45%
-  .steps
-    &__item
-      margin-right: 2rem      
+        width: 60%
   .swiper
     &-button
       &-next, &-prev
