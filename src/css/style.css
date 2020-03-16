@@ -1202,6 +1202,9 @@ a {
     max-width: 1240px;
     width: 100%;
   }
+  .six-steps {
+    background-image: none;
+  }
   .menu__logo {
     margin: 0;
   }
