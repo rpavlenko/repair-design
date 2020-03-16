@@ -809,7 +809,6 @@ img {
 }
 
 .six-steps__heading {
-  margin-bottom: 6.571rem;
   line-height: 2.656rem;
   font-size: 1.928rem;
 }
@@ -832,7 +831,7 @@ img {
 }
 
 .six-steps__title {
-  margin-bottom: 1.142rem;
+  margin-bottom: 0.95rem;
   font-size: 1.071rem;
   line-height: 1.642rem;
 }
@@ -848,6 +847,48 @@ img {
 
 .six-steps__description {
   flex-basis: 100%;
+}
+
+.steps {
+  padding: 0;
+  list-style-type: none;
+}
+
+.steps__six-steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.steps__item {
+  width: 9.07rem;
+  margin-right: 6rem;
+  margin-bottom: 2.571rem;
+}
+
+.swiper-slide__value {
+  margin: 0;
+}
+
+.six-steps-swiper {
+  padding-top: 9.1rem;
+}
+
+.six-steps-swiper--padding {
+  padding-top: 0;
+}
+
+.swiper-pagination-fraction {
+  top: 5.2rem;
+  left: 0;
+  max-width: 3rem;
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {

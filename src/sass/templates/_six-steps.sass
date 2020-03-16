@@ -5,7 +5,6 @@
   background-color: $dark
   // background-image: url('../img/six-steps-bg.svg')
   &__heading
-    margin-bottom: 6.571rem
     line-height: 2.656rem
     font-size: 1.928rem
     &--break
@@ -20,7 +19,7 @@
       height: 2px
       background-color: $primary         
   &__title
-    margin-bottom: 1.142rem 
+    margin-bottom: 0.95rem 
     font-size: 1.071rem
     line-height: 1.642rem
   &__subtitle
@@ -31,13 +30,44 @@
     line-height: 1.5rem
     text-transform: uppercase
   &__description
-    flex-basis: 100%  
+    flex-basis: 100%
+.steps
+  padding: 0
+  list-style-type: none
+  &__six-steps
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__item
+    width: 9.07rem
+    margin-right: 6rem
+    margin-bottom: 2.571rem
+
+.swiper-slide
+  &__value
+    margin: 0    
+.six-steps-swiper
+    padding-top: 9.1rem
+    &--padding
+      padding-top: 0
+.swiper-pagination-fraction
+    top: 5.2rem
+    left: 0 
+    max-width: 3rem
+    font-family: Yeseva One
+    font-style: normal
+    font-weight: normal
+    font-size: 1.285rem
+    line-height: 1.78rem
+    text-transform: uppercase
+    letter-spacing: 0.05rem
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: -1px      
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
   margin: 0
-  margin-right: 1.352rem    
+  margin-right: 1.352rem   
+
   
 
 

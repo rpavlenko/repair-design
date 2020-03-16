@@ -77,17 +77,33 @@ $(document).ready(function () {
   var bullets = $('.completed-projects-pagination');
   next.css('left', prev.width() + 30 + bullets.width() + 12);
   bullets.css('left', 30 + prev.width());
+  
 
   var sixStepsSwiper = new Swiper('.six-steps-swiper', {
     loop: true,
-    navigation: {
-      nextEl: '.swiper-button-next-six-steps',
-      prevEl: '.swiper-button-prev-six-steps',
+    controller: {
+        control: fractionSwiper,
     },
+
     pagination: {
       el: '.swiper-pagination-six-steps',
       type: 'bullets',
     },
+  });
+
+  var fractionSwiper = new Swiper('.six-steps-swiper-images', {
+    loop: true,
+    controller: {
+      control: sixStepsSwiper,
+    },
+    pagination: {
+      el: '.secondPagination',
+      type: 'fraction',
+    },
+        navigation: {
+          nextEl: '.swiper-button-next-six-steps',
+          prevEl: '.swiper-button-prev-six-steps',
+        },
   });
 
   var nextSixSteps = $('.swiper-button-next-six-steps');
