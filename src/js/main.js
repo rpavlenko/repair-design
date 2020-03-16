@@ -89,6 +89,7 @@ $(document).ready(function () {
       el: '.swiper-pagination-six-steps',
       type: 'bullets',
     },
+
   });
 
   var fractionSwiper = new Swiper('.six-steps-swiper-images', {
@@ -104,7 +105,48 @@ $(document).ready(function () {
           nextEl: '.swiper-button-next-six-steps',
           prevEl: '.swiper-button-prev-six-steps',
         },
+
   });
+
+  document.querySelector('.slide-1').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(1);
+  });
+
+  document.querySelector('.slide-2').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(2);
+  });
+
+  document.querySelector('.slide-3').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(3);
+  });
+
+  document.querySelector('.slide-4').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(4);
+  });
+
+  document.querySelector('.slide-5').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(5);
+  });
+
+  document.querySelector('.slide-6').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(6);
+  });
+
+  $(".steps__number").click(function () {
+    if ($(this).hasClass("active")) {
+    } else {
+      $(".active").removeClass("active");
+      $(this).addClass('active');
+    }
+  });
+
+
 
   var nextSixSteps = $('.swiper-button-next-six-steps');
   var prevSixSteps = $('.swiper-button-prev-six-steps');

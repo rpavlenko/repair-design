@@ -824,7 +824,7 @@ img {
 
 .six-steps__word::after {
   margin-left: 6.1rem;
-  content: "";
+  content: '';
   width: 6.571rem;
   height: 2px;
   background-color: #E3B873;
@@ -864,6 +864,28 @@ img {
   width: 9.07rem;
   margin-right: 6rem;
   margin-bottom: 2.571rem;
+}
+
+.steps__item--decoration-none {
+  text-decoration: none;
+  color: #fff;
+}
+
+.steps__number {
+  display: inline-block;
+  border-bottom: 1px solid #E3B873;
+  margin-bottom: 0.831rem;
+}
+
+.steps .active {
+  color: #E3B873;
+}
+
+.steps__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.071rem;
+  line-height: 1.28rem;
 }
 
 .swiper-slide__value {
