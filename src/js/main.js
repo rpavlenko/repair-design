@@ -80,7 +80,6 @@ $(document).ready(function () {
   
 
   var sixStepsSwiper = new Swiper('.six-steps-swiper', {
-    loop: true,
     controller: {
         control: fractionSwiper,
     },
@@ -93,7 +92,6 @@ $(document).ready(function () {
   });
 
   var fractionSwiper = new Swiper('.six-steps-swiper-images', {
-    loop: true,
     controller: {
       control: sixStepsSwiper,
     },
@@ -101,11 +99,27 @@ $(document).ready(function () {
       el: '.secondPagination',
       type: 'fraction',
     },
-        navigation: {
-          nextEl: '.swiper-button-next-six-steps',
-          prevEl: '.swiper-button-prev-six-steps',
-        },
+    navigation: {
+      nextEl: '.swiper-button-next-six-steps',
+      prevEl: '.swiper-button-prev-six-steps',
+    },
+    
+  });
 
+  fractionSwiper.on('slideChange', function () {
+    var activeSlide = ('.slide-' + fractionSwiper.realIndex);
+    var prevSlide = ('.slide-' + fractionSwiper.previousIndex)
+    if ($(activeSlide).hasClass("active")) {
+      $(activeSlide).removeClass("active");
+    } else {
+      $(prevSlide).removeClass("active");
+      $(activeSlide).addClass("active");
+    }
+  });
+
+  document.querySelector('.slide-0').addEventListener('click', function (e) {
+    e.preventDefault();
+    fractionSwiper.slideTo(0);
   });
 
   document.querySelector('.slide-1').addEventListener('click', function (e) {
@@ -133,18 +147,7 @@ $(document).ready(function () {
     fractionSwiper.slideTo(5);
   });
 
-  document.querySelector('.slide-6').addEventListener('click', function (e) {
-    e.preventDefault();
-    fractionSwiper.slideTo(6);
-  });
 
-  $(".steps__number").click(function () {
-    if ($(this).hasClass("active")) {
-    } else {
-      $(".active").removeClass("active");
-      $(this).addClass('active');
-    }
-  });
 
 
 

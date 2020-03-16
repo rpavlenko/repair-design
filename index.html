@@ -447,9 +447,9 @@
               <!-- /.section-title__heading -->
             </div>
             <!-- /.section-title -->
-            <div class="swiper-container six-steps-swiper">
+            <div class="swiper-container six-steps-swiper swiper-no-swiping">
               <!-- Additional required wrapper -->
-              <div class="swiper-wrapper swiper-no-swiping">
+              <div class="swiper-wrapper ">
                 <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="swiper-slide__text six-steps__description">
@@ -458,7 +458,7 @@
                       После вашего звонка мы идем к вам, чтобы проконсультироваться и
                       измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                     </span>
-                    <p class="swiper-slide__value">
+                    <p class="swiper-slide__value swiper-slide__value--second">
                       Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта
                       квартиры в целом и отдельных ее этапов.
                     </p>
@@ -471,7 +471,7 @@
                       После вашего звонка мы идем к вам, чтобы проконсультироваться и
                       измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                     </span>
-                    <p class="swiper-slide__value">
+                    <p class="swiper-slide__value swiper-slide__value--second">
                       Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта
                       квартиры в целом и отдельных ее этапов.
                     </p>
@@ -484,7 +484,7 @@
                       После вашего звонка мы идем к вам, чтобы проконсультироваться и
                       измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                     </span>
-                    <p class="swiper-slide__value">
+                    <p class="swiper-slide__value swiper-slide__value--second">
                       Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта
                       квартиры в целом и отдельных ее этапов.
                     </p>
@@ -497,7 +497,7 @@
                       После вашего звонка мы идем к вам, чтобы проконсультироваться и
                       измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                     </span>
-                    <p class="swiper-slide__value">
+                    <p class="swiper-slide__value swiper-slide__value--second">
                       Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта
                       квартиры в целом и отдельных ее этапов.
                     </p>
@@ -510,7 +510,7 @@
                       После вашего звонка мы идем к вам, чтобы проконсультироваться и
                       измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                     </span>
-                    <p class="swiper-slide__value">
+                    <p class="swiper-slide__value swiper-slide__value--second">
                       Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта
                       квартиры в целом и отдельных ее этапов.
                     </p>
@@ -523,7 +523,7 @@
                       После вашего звонка мы идем к вам, чтобы проконсультироваться и
                       измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.
                     </span>
-                    <p class="swiper-slide__value">
+                    <p class="swiper-slide__value swiper-slide__value--second">
                       Оценщик приходит, чтобы измерить комнату. Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта
                       квартиры в целом и отдельных ее этапов.
                     </p>
@@ -540,73 +540,74 @@
             </div>
           </div>
           <!-- /.col-30 -->
-          <div class="col-60">
-
-            <div class="swiper-container six-steps-swiper-images six-steps-swiper--padding">
+          <div class="col-62 col-62__six-steps">
+            <div class="swiper-container six-steps-swiper-images six-steps-swiper--padding swiper-no-swiping">
               <ul class="steps steps__six-steps">
-                <li class="steps__item">
-                  <a href="#" class="steps__item--decoration-none slide-1">
-                    <span class="active steps__number">01</span>
-                    <!-- /.steps__number -->
-                    <div class="steps__description">Выезд на замер помещения</div>
-                    <!-- /.steps__description -->
+                <div class="steps__wrapper">
+                  <a href="#" class="steps__item--decoration-none slide-0 active">
+                    <li class="steps__item">
+                      <span class="steps__number">01</span>
+                      <!-- /.steps__number -->
+                      <div class="steps__description">Выезд на замер помещения</div>
+                      <!-- /.steps__description -->
+                    </li>
+                    <!-- /.steps__item -->
                   </a>
-                </li>
-                <!-- /.steps__item -->
-                <li class="steps__item">
-                  <a href="#" class="steps__item--decoration-none slide-2">
-                    <span class="steps__number">02</span>
-                    <!-- /.steps__number -->
-                    <div class="steps__description">Составление сметы</div>
-                    <!-- /.steps__description -->
+                  <a href="#" class="steps__item--decoration-none slide-1 ">
+                    <li class="steps__item">
+                      <span class="steps__number">02</span>
+                      <!-- /.steps__number -->
+                      <div class="steps__description">Составление <br>сметы</div>
+                      <!-- /.steps__description -->
+                    </li>
+                    <!-- /.steps__item -->
                   </a>
-                </li>
-                <!-- /.steps__item -->
-                <li class="steps__item">
-                  <a href="#" class="steps__item--decoration-none slide-3">
-                    <span class="steps__number">03</span>
-                    <!-- /.steps__number -->
-                    <div class="steps__description">Разработка дизайн проекта</div>
-                    <!-- /.steps__description -->
+                  <a href="#" class="steps__item--decoration-none slide-2 ">
+                    <li class="steps__item">
+                      <span class="steps__number">03</span>
+                      <!-- /.steps__number -->
+                      <div class="steps__description">Разработка <br>дизайн проекта</div>
+                      <!-- /.steps__description -->
+                    </li>
+                    <!-- /.steps__item -->
                   </a>
-                </li>
-                <!-- /.steps__item -->
-                <li class="steps__item">
-                  <a href="#" class="steps__item--decoration-none slide-4">
-                    <span class="steps__number">04</span>
-                    <!-- /.steps__number -->
-                    <div class="steps__description">Закупка расходных материалов</div>
-                    <!-- /.steps__description -->
+                </div>
+
+                <div class="steps__wrapper">
+                  <a href="#" class="steps__item--decoration-none slide-3 ">
+                    <li class="steps__item">
+                      <span class="steps__number">04</span>
+                      <!-- /.steps__number -->
+                      <div class="steps__description">Закупка расходных материалов</div>
+                      <!-- /.steps__description -->
+                    </li>
+                    <!-- /.steps__item -->
                   </a>
-                </li>
-                <!-- /.steps__item -->
-                <li class="steps__item">
-                  <a href="#" class="steps__item--decoration-none slide-5">
-                    <span class="steps__number">05</span>
-                    <!-- /.steps__number -->
-                    <div class="steps__description">Ремонтно-отделочные работы</div>
-                    <!-- /.steps__description -->
+                  <a href="#" class="steps__item--decoration-none slide-4 ">
+                    <li class="steps__item">
+                      <span class="steps__number">05</span>
+                      <!-- /.steps__number -->
+                      <div class="steps__description">Ремонтно-&nbsp;отделочные работы</div>
+                      <!-- /.steps__description -->
+                    </li>
+                    <!-- /.steps__item -->
                   </a>
-                </li>
-                <!-- /.steps__item -->
-                <li class="steps__item">
-                  <a href="#" class="steps__item--decoration-none slide-6">
-                    <span class="steps__number">06</span>
-                    <!-- /.steps__number -->
-                    <div class="steps__description">Приемка-сдача работ</div>
-                    <!-- /.steps__description -->
+                  <a href="#" class="steps__item--decoration-none slide-5 ">
+                    <li class="steps__item">
+                      <span class="steps__number">06</span>
+                      <!-- /.steps__number -->
+                      <div class="steps__description">Приемка-сдача работ</div>
+                      <!-- /.steps__description -->
+                    </li>
+                    <!-- /.steps__item -->
                   </a>
-                </li>
-                <!-- /.steps__item -->
+                </div>
               </ul>
               <!-- /.steps -->
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper swiper-no-swiping">
 
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- Additional required wrapper -->
                 <!-- Slides -->
-                <div class="swiper-slide">
-                  <img class="swiper-slide__img" src="./src/img/six-steps-to-aim.jpg" alt="completed project">
-                </div>
                 <div class="swiper-slide">
                   <img class="swiper-slide__img" src="./src/img/six-steps-to-aim.jpg" alt="completed project">
                 </div>
@@ -630,7 +631,7 @@
 
             </div>
           </div>
-          <!-- /.col-60 -->
+          <!-- /.col-62 -->
         </div>
         <!-- /.row -->
       </div>
