@@ -119,32 +119,32 @@ $(document).ready(function () {
 
   document.querySelector('.slide-0').addEventListener('click', function (e) {
     e.preventDefault();
-    fractionSwiper.slideTo(0);
+    fractionSwiper.slideTo(0, 1000);
   });
 
   document.querySelector('.slide-1').addEventListener('click', function (e) {
     e.preventDefault();
-    fractionSwiper.slideTo(1);
+    fractionSwiper.slideTo(1, 1000);
   });
 
   document.querySelector('.slide-2').addEventListener('click', function (e) {
     e.preventDefault();
-    fractionSwiper.slideTo(2);
+    fractionSwiper.slideTo(2, 1000);
   });
 
   document.querySelector('.slide-3').addEventListener('click', function (e) {
     e.preventDefault();
-    fractionSwiper.slideTo(3);
+    fractionSwiper.slideTo(3, 1000);
   });
 
   document.querySelector('.slide-4').addEventListener('click', function (e) {
     e.preventDefault();
-    fractionSwiper.slideTo(4);
+    fractionSwiper.slideTo(4, 1000);
   });
 
   document.querySelector('.slide-5').addEventListener('click', function (e) {
     e.preventDefault();
-    fractionSwiper.slideTo(5);
+    fractionSwiper.slideTo(5, 1000);
   });
 
 
