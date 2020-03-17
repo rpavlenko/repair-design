@@ -1254,6 +1254,9 @@ a {
   .col-62__six-steps {
     width: 60%;
   }
+  .steps__item {
+    margin-right: 0;
+  }
   .swiper-button-next, .swiper-button-prev {
     width: 5rem;
   }
