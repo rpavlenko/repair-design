@@ -1222,7 +1222,7 @@ a {
 
 @media screen and (max-width: 1439px) {
   .steps__wrapper {
-    width: 95%;
+    max-width: 100%;
   }
   .steps__item {
     margin-right: 5rem;
@@ -1266,8 +1266,11 @@ a {
 }
 
 @media screen and (max-width: 1165px) {
-  .six-steps {
-    display: none;
+  .col-30__six-steps {
+    max-width: 30%;
+  }
+  .col-62__six-steps {
+    max-width: 60%;
   }
 }
 

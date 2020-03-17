@@ -28,7 +28,7 @@
 @media screen and (max-width:  1439px)
   .steps
     &__wrapper
-      width: 95%
+      max-width: 100%
     &__item
       margin-right: 5rem  
 @media screen and (max-width:  1340px)
@@ -62,8 +62,13 @@
   .nav      
     display: none   
 @media screen and (max-width: 1165px)
-  .six-steps
-    display: none
+  .col
+    &-30
+      &__six-steps
+        max-width: 30%
+    &-62  
+      &__six-steps
+        max-width: 60%
 @media screen and (max-width: 1010px)
   .nav
     display: none
