@@ -1314,6 +1314,9 @@ a {
   .section-title--display-none {
     display: none;
   }
+  .six-steps {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 760px) {
