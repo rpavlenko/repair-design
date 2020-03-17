@@ -82,6 +82,7 @@ $(document).ready(function () {
   var sixStepsSwiper = new Swiper('.six-steps-swiper', {
     controller: {
         control: fractionSwiper,
+    slidesPerView: 1,
     },
 
     pagination: {

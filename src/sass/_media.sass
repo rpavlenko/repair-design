@@ -34,7 +34,10 @@
 @media screen and (max-width:  1340px)
   .nav
     &__item
-      margin-right: 1rem   
+      margin-right: 1rem
+  .steps
+    &__item
+      margin-right: 0           
 @media screen and (max-width:  1260px)
   html
     font-size: 12px
@@ -48,30 +51,26 @@
       margin-left: 0
   .col
     &-30
+      &__six-steps
+        width: 45%
     &-60
       width: 55%
     &-62  
       &__six-steps
-        width: 60%
-  .steps
-    &__item
-      margin-right: 0      
+        width: 50%  
   .swiper
     &-button
       &-next, &-prev
         width: 5rem
       &-next
-        left: auto      
+        left: auto  
+    &-slide
+      &__value
+        &--second  
+          width: auto      
   .nav      
     display: none   
-@media screen and (max-width: 1165px)
-  .col
-    &-30
-      &__six-steps
-        max-width: 30%
-    &-62  
-      &__six-steps
-        max-width: 60%
+
 @media screen and (max-width: 1010px)
   .nav
     display: none
