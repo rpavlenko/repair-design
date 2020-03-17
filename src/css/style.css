@@ -944,6 +944,10 @@ a {
   margin-right: 1.352rem;
 }
 
+.swiper-button-next, .swiper-button-prev {
+  outline: none;
+}
+
 .hero {
   position: relative;
   display: flex;
