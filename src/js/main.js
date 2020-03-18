@@ -57,6 +57,21 @@ $(document).ready(function () {
     }
   });
 
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 1750) {
+      $('.types__card').addClass('fadeInUp', 1000);
+    } else {
+      $('.types__card').removeClass('fadeInUp', 1000);
+    }
+
+    if (y > 2750) {
+      $('.project__card').addClass('fadeInUp', 1000);
+    } else {
+      $('.project__card').removeClass('fadeInUp', 1000);
+    }
+  });
+
   // sliders
 
 
