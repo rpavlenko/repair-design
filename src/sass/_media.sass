@@ -361,6 +361,7 @@
     background: $fourthdary
     &__wrap    
       padding: 2.5rem 0
+      padding-bottom: 0
       background: $fourthdary
     &__title
       margin-bottom: 4.63rem
@@ -374,16 +375,47 @@
         line-height: 2rem
       &-group
         margin-bottom: 5.45rem
-    &__policy-label
-      margin-top: -5rem
-      justify-content: flex-start
-      font-size: 1.333rem
-      line-height: 1.83rem
+    &__policy
+      margin-bottom: 3.6rem
+      &-label
+        margin-top: -5rem
+        justify-content: flex-start
+        font-size: 1.333rem
+        line-height: 1.83rem
     &__button
       width: 100%
       padding: 1.15rem 4.785rem
       font-size: 1.37rem
       line-height: 1.85rem
+    &__menu
+      display: none
+    &__map
+      width: 100%
+      min-height: 255px
+      max-height: 255px
+      order: -1
+      margin-bottom: 3.48rem
+  .adress
+    &__wrap
+      display: flex
+      flex-direction: column
+      padding-top: 0
+    &__title
+      margin-top: -0.1rem
+      max-width: 26.33rem
+      font-size: 1.49rem
+      line-height: 141%
+    &__social-icon
+      margin: 0
+      &-email
+        margin-right: 1.8rem
+        width: 39px
+        height: 39px
+      &-insta 
+        width: 39px
+        height: 39px 
+
+
 @media screen and (max-width: 360px)
   html
     font-size: 10px
