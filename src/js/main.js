@@ -60,15 +60,15 @@ $(document).ready(function () {
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 1750) {
-      $('.types__card').addClass('fadeInUp', 1000);
+      $('.types__card').addClass('fadeInDown', 1000);
     } else {
-      $('.types__card').removeClass('fadeInUp', 1000);
+      $('.types__card').removeClass('fadeInDown', 1000);
     }
 
     if (y > 2750) {
-      $('.project__card').addClass('fadeInUp', 1000);
+      $('.project__card').addClass('fadeInDown', 1000);
     } else {
-      $('.project__card').removeClass('fadeInUp', 1000);
+      $('.project__card').removeClass('fadeInDown', 1000);
     }
   });
 
@@ -163,16 +163,113 @@ $(document).ready(function () {
     fractionSwiper.slideTo(5, 1000);
   });
 
-
-
-
-
   var nextSixSteps = $('.swiper-button-next-six-steps');
   var prevSixSteps = $('.swiper-button-prev-six-steps');
   var bulletsSixSteps = $('.swiper-pagination-six-steps');
   nextSixSteps.css('left', prevSixSteps.width() + 30 + bulletsSixSteps.width() + 12);
   bulletsSixSteps.css('left', 30 + prevSixSteps.width());
 
+
+  // Form validation
+  $('.modal__form').validate({
+    errorElement: 'div',
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв",
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorElement: 'div',
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв",
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Заполните поле",
+      }
+    }
+  });
+
+  $('.control__form').validate({
+    errorElement: 'div',
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      // compound rule
+      userPhone: "required",
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя не короче 2 букв",
+        maxlength: "Имя не больше 15 букв",
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Заполните поле",
+      }
+    }
+  });
+
+
+
+
+
+  // phone mask
+  $('[type=tel]').mask('+7(000) 000-00--00', {placeholder: "+7 (___) ___-__-__"});
+
+  // WOW animation
   new WOW().init();
 });
 
