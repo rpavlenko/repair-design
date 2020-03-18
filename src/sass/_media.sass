@@ -96,14 +96,20 @@
         display: flex
         order: 0
   .swiper-slide
-    &__text
-      flex-basis: 50%   
+    // &__text
+    //   flex-basis: 50%   
     &__img
       margin: 0 auto     
   .section
     &-title
       &--display-none
         display: none
+  .completed-projects
+    &--padding-bottom
+      padding-bottom: 1.7rem
+    &__slide-text
+      flex-basis: 50%
+      margin-top: 2rem    
   .six-steps
     display: none               
 @media screen and (max-width: 760px)  
@@ -118,7 +124,9 @@
       margin-bottom: 5rem
   .project
     &__card
-      margin-bottom: 5rem    
+      margin-bottom: 5rem
+    &__text
+            
   .card
     &__description
       max-width: 27rem 
@@ -172,6 +180,17 @@
       &--center
         text-align: center
         margin-bottom: 1.9rem
+    &__slide-text
+      flex-basis: 47%    
+    &__slide-heading
+      margin-bottom: 0.5rem
+      font-size: 1.16rem    
+    &__slide-text
+      margin-bottom: 2.8rem    
+    &__img
+      height: 16.83rem
+      width: 100%
+      margin: 0 auto 2.75rem auto
   .hero
     &__scroll-down
       display: none
@@ -189,9 +208,58 @@
       font-size: 1.08rem
       padding: 1.58rem 5.83rem
       margin-bottom: 1.8rem
+  .control
+    background-color: $dark
+    &__text
+      margin-bottom: 2.16rem
+      font-size: 1.167rem
+      line-height: 2rem 
+      font-style: normal
+      font-weight: normal
+      color: $light
+      &::before
+        margin-bottom: 1.35rem
+    &__image
+      margin-top: 1.7rem
+      margin-bottom: 3.333rem
+    &__video
+      max-width: 28.33rem
+      min-height: 17.25rem
+      margin-bottom: 2.1rem
+      width: 100%
+      background-size: 100% 100%
+    &__form
+      flex-direction: column
+    &__input
+      &::placeholder
+        font-size: 1.5rem
+        line-height: 138.72%
+        color: $light  
+    &__input-group
+      margin-bottom: 5.25rem
+      &:last-child
+        margin-bottom: 0
+    &__label
+      color: $gray
+      font-size: 1.25rem
+      line-height: 1.66rem
+    &__policy
+      margin-top: -5rem
+      margin-bottom: 5.2rem
+      font-size: 1.33rem
+      line-height: 1.83rem
+      color: $light
+      &-label
+        justify-content: flex-start
+    &__button
+      order: 1
+      margin-bottom: -2.08rem
+      font-size: 1.37rem
+      line-height: 1.85rem
+  .types
+    &__text
+      margin-top: -15.2rem    
   .swiper
-    &-slide
-      padding-bottom: 0
       &__text
         margin-bottom: 2.5rem
       &__heading
@@ -199,17 +267,15 @@
         font-size: 1.16rem
       &__value
         font-size: 1.16rem 
-      &__img
-        height: 16.83rem
-        width: 100%
-        margin: 0 auto 2.75rem auto
       &--padding-bottom
         padding-bottom: 1.91rem  
         
 @media screen and (max-width: 375px)
   .container
-    &__types, &__project, &__completed-projects
+    &__types, &__project, &__completed-projects, &__control
       width: 90%
+    &__control
+      width: 91%  
   .section-title
     &__heading
       font-size: 1.84rem
@@ -226,10 +292,6 @@
         max-width: 25.5rem
         line-height: 135.84%
   .card
-    &__text
-      margin-top: -12rem
-      padding: 1.84rem 2.5rem
-      max-width: 22.5rem
     &__title
       font-size: 1.25rem    
       margin-left: 0
@@ -249,10 +311,6 @@
       padding: 0 0 0 1.1rem
       line-height: 1.9rem
       letter-spacing: 0
-      &--project
-        margin-bottom: 1rem
-        padding: 0 0 0 1rem
-        line-height: 189.8%
     &--background
       &::before
         display: none
@@ -260,7 +318,9 @@
     &__section-title
       margin-bottom: 2.35rem
     &__card
-      padding-top: 1.65rem      
+      padding-top: 1.65rem
+    &__text
+      max-width: 22.6rem        
   .project
     background-color: $fourthdary
     &__card
@@ -271,7 +331,28 @@
         margin-bottom: 6.8rem
     &__pricetag
       padding: 0.75rem 0
-                 
+    &__list
+      margin-bottom: 1rem
+      padding: 0 0 0 1rem
+      line-height: 189.8%
+    &__text
+        margin-top: -11.7rem
+        padding: 1.78rem 1rem 2rem 2.5rem 
+        width: 22.5rem       
+  .completed-projects
+      &__img
+        margin-bottom: 0
+      &__slide-text
+        margin-top: 2.4rem
+        margin-bottom: 0.5rem
+      &--padding-bottom
+        padding-bottom: 4.1rem           
+  .video  
+    &__play
+      width: 5.083rem
+      height: 5.083rem
+      margin: auto
+      
 @media screen and (max-width: 360px)
   html
     font-size: 10px

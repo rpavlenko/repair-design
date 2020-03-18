@@ -157,5 +157,7 @@ $(document).ready(function () {
   var bulletsSixSteps = $('.swiper-pagination-six-steps');
   nextSixSteps.css('left', prevSixSteps.width() + 30 + bulletsSixSteps.width() + 12);
   bulletsSixSteps.css('left', 30 + prevSixSteps.width());
+
+  new WOW().init();
 });
 
