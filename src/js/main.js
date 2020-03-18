@@ -268,6 +268,13 @@ $(document).ready(function () {
 
   // phone mask
   $('[type=tel]').mask('+7(000) 000-00--00', {placeholder: "+7 (___) ___-__-__"});
+  $('.control-phone__input').mask('+7(000) 000-00--00', {
+    placeholder: "Ваш номер телефона"
+  });
+  $('.footer-form__input').mask('+7(000) 000-00--00', {
+    placeholder: "Ваш номер телефона"
+  });
+
 
   // WOW animation
   new WOW().init();

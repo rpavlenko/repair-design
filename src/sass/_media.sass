@@ -74,7 +74,7 @@
 @media screen and (max-width: 1010px)
   .nav
     display: none
-@media screen and (max-width: 969px)
+@media screen and (max-width: 970px)
   .nav      
     display: none
   .modal
@@ -111,7 +111,10 @@
       flex-basis: 50%
       margin-top: 2rem    
   .six-steps
-    display: none               
+    display: none
+  .footer
+    &__wrap
+      margin-top: 0              
 @media screen and (max-width: 760px)  
   .row
     flex-direction: column
@@ -119,14 +122,9 @@
   .section-title
     &__description
       max-width: 37.5rem    
-  .types
+  .types, .project
     &__card
       margin-bottom: 5rem
-  .project
-    &__card
-      margin-bottom: 5rem
-    &__text
-            
   .card
     &__description
       max-width: 27rem 
@@ -231,14 +229,16 @@
     &__form
       flex-direction: column
     &__input
+      border-bottom: 1px solid $light
+      &-group
+        margin-bottom: 5.25rem
+        flex-basis: 100%
+        &:last-child
+          margin-bottom: 0
       &::placeholder
         font-size: 1.5rem
         line-height: 138.72%
         color: $light  
-    &__input-group
-      margin-bottom: 5.25rem
-      &:last-child
-        margin-bottom: 0
     &__label
       color: $gray
       font-size: 1.25rem
@@ -258,7 +258,11 @@
       line-height: 1.85rem
   .types
     &__text
-      margin-top: -15.2rem    
+      margin-top: -15.2rem   
+  .footer     
+    &__input-group
+      flex-basis: 100%
+      border-bottom: 1px solid $light
   .swiper
       &__text
         margin-bottom: 2.5rem
@@ -272,10 +276,10 @@
         
 @media screen and (max-width: 375px)
   .container
-    &__types, &__project, &__completed-projects, &__control
+    &__types, &__project, &__completed-projects, &__footer
       width: 90%
     &__control
-      width: 91%  
+      width: 91%
   .section-title
     &__heading
       font-size: 1.84rem
@@ -352,7 +356,33 @@
       width: 5.083rem
       height: 5.083rem
       margin: auto
-      
+  .footer
+    background: $fourthdary
+    &__wrap    
+      padding: 2.5rem 0
+      background: $fourthdary
+    &__title
+      margin-bottom: 4.63rem
+      font-style: normal
+      font-weight: normal
+      font-size: 1.666rem
+      line-height: 2.333rem
+    &__input
+      &::placeholder
+        font-size: 1.5rem
+        line-height: 2rem
+      &-group
+        margin-bottom: 5.45rem
+    &__policy-label
+      margin-top: -5rem
+      justify-content: flex-start
+      font-size: 1.333rem
+      line-height: 1.83rem
+    &__button
+      width: 100%
+      padding: 1.15rem 4.785rem
+      font-size: 1.37rem
+      line-height: 1.85rem
 @media screen and (max-width: 360px)
   html
     font-size: 10px
