@@ -1181,6 +1181,7 @@ a {
 }
 
 .control__input {
+  color: #131313;
   padding-top: 0.3rem;
 }
 
@@ -1740,6 +1741,7 @@ a {
     flex-direction: column;
   }
   .control__input {
+    color: #fff;
     border-bottom: 1px solid #fff;
   }
   .control__input-group {
