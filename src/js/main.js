@@ -303,7 +303,7 @@ $(document).ready(function () {
         iconImageOffset: [-5, -38]
       });
 
-
+    myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects
       .add(myPlacemark)
   });
