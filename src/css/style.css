@@ -929,7 +929,7 @@ a {
   list-style-type: none;
 }
 
-.steps__wrapper {
+.steps__six-steps {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
