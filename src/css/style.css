@@ -1549,7 +1549,7 @@ a {
 }
 
 @media screen and (max-width: 1439px) {
-  .steps__wrapper {
+  .steps__six-steps {
     max-width: 100%;
   }
   .steps__item {
