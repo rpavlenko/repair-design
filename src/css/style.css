@@ -1006,6 +1006,10 @@ a {
   margin-bottom: 6.55rem;
 }
 
+.team__row--invisible {
+  display: none;
+}
+
 .team__image {
   margin-bottom: 1.24rem;
 }
@@ -1100,6 +1104,7 @@ a {
   width: 5rem;
   height: 5rem;
   background: #E3B873 url("../img/team/idea.svg") no-repeat center;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
 .icon__designer::after {
@@ -1110,6 +1115,7 @@ a {
   width: 5rem;
   height: 5rem;
   background: #E3B873 url("../img/team/pen.svg") no-repeat center;
+  box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5);
 }
 
 .icon__foreman::after {
@@ -1787,6 +1793,16 @@ a {
   .six-steps {
     display: none;
   }
+  .project__card {
+    margin-bottom: 7rem;
+  }
+  .team__row {
+    padding-top: 4rem;
+    margin-bottom: 0;
+  }
+  .team__card {
+    margin-bottom: 7rem;
+  }
   .footer__wrap {
     margin-top: 0;
   }
@@ -2010,7 +2026,7 @@ a {
 }
 
 @media screen and (max-width: 375px) {
-  .container__types, .container__project, .container__completed-projects, .container__footer {
+  .container__types, .container__project, .container__completed-projects, .container__footer, .container__team {
     width: 90%;
   }
   .container__control {
@@ -2070,6 +2086,7 @@ a {
     max-width: 22.6rem;
   }
   .project {
+    padding-bottom: 0;
     background-color: #181818;
   }
   .project__card {
@@ -2171,6 +2188,86 @@ a {
     max-height: 255px;
     order: -1;
     margin-bottom: 3.48rem;
+  }
+  .team {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: #181818;
+  }
+  .team__section-title {
+    padding-top: 0;
+    margin-bottom: 6.7rem;
+  }
+  .team__description {
+    max-width: 28.333rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    line-height: 135.84%;
+  }
+  .team__row {
+    padding-top: 0;
+  }
+  .team__row--visible {
+    display: none;
+  }
+  .team__row--invisible {
+    display: flex;
+  }
+  .team__card {
+    margin-bottom: 4.3rem;
+    left: 18px;
+  }
+  .team__card-text {
+    margin: auto;
+    top: -7rem;
+    max-width: 19.41rem;
+    padding: 1.6rem 1.75rem 2rem 0.78rem;
+  }
+  .team__title {
+    margin-bottom: .25rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.08rem;
+  }
+  .team__role {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2.16rem;
+    text-align: center;
+  }
+  .team__photo {
+    width: 25.333rem;
+  }
+  .team__photo--smaller {
+    top: -10px;
+  }
+  .team__text {
+    color: #fff;
+  }
+  .team__tag {
+    bottom: -2.79rem;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.08rem;
+    line-height: 1.66rem;
+    padding: 0.828rem 2.64rem 0.6rem 1.74rem;
+  }
+  .icon__manager::after {
+    width: 70px;
+    height: 70px;
+  }
+  .icon__designer::after {
+    width: 70px;
+    height: 70px;
+  }
+  .icon__foreman::after {
+    width: 70px;
+    height: 70px;
   }
   .adress__wrap {
     display: flex;

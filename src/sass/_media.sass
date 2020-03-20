@@ -118,6 +118,15 @@
       margin-top: 2rem    
   .six-steps
     display: none
+  .project
+    &__card
+      margin-bottom: 7rem
+  .team
+    &__row
+      padding-top: 4rem
+      margin-bottom: 0
+    &__card
+      margin-bottom: 7rem  
   .footer
     &__wrap
       margin-top: 0              
@@ -283,7 +292,7 @@
         
 @media screen and (max-width: 375px)
   .container
-    &__types, &__project, &__completed-projects, &__footer
+    &__types, &__project, &__completed-projects, &__footer, &__team
       width: 90%
     &__control
       width: 91%
@@ -333,6 +342,7 @@
     &__text
       max-width: 22.6rem        
   .project
+    padding-bottom: 0
     background-color: $fourthdary
     &__card
       margin-bottom: 5.65rem
@@ -401,6 +411,76 @@
       max-height: 255px
       order: -1
       margin-bottom: 3.48rem
+  .team
+    margin-top: 0
+    padding-top: 0
+    background-color: $fourthdary
+    &__section-title
+      padding-top: 0
+      margin-bottom: 6.7rem
+    &__description
+      max-width: 28.333rem
+      font-style: normal
+      font-weight: normal
+      font-size: 1.25rem
+      line-height: 135.84%
+    &__row
+      padding-top: 0
+      &--visible
+        display: none
+      &--invisible
+        display: flex  
+    &__card
+      margin-bottom: 4.3rem
+      left: 18px  
+      &-text
+        margin: auto
+        top: -7rem
+        max-width: 19.41rem
+        padding: 1.6rem 1.75rem 2rem 0.78rem
+    &__title
+      margin-bottom: .25rem
+      text-align: center
+      font-style: normal
+      font-weight: normal
+      font-size: 1.5rem
+      line-height: 2.08rem
+    &__role
+      font-style: normal
+      font-weight: normal
+      font-size: 1.5rem
+      line-height: 2.16rem
+      text-align: center  
+    &__photo
+      width: 25.333rem
+      &--smaller
+        top: -10px
+    &__text
+      color: $light
+    &__tag
+      bottom: -2.79rem
+      width: 100%
+      font-style: normal
+      font-weight: normal
+      font-size: 1.08rem
+      line-height: 1.66rem
+      padding: 0.828rem 2.64rem 0.6rem 1.74rem
+
+  .icon
+    &__manager
+      &::after
+        width: 70px
+        height: 70px
+    &__designer
+      &::after
+        width: 70px
+        height: 70px
+    &__foreman
+      &::after
+        width: 70px
+        height: 70px       
+
+
   .adress
     &__wrap
       display: flex
