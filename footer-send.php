@@ -1,7 +1,6 @@
 <?php
 
   $userName = $_POST['userName'];
-  $userEmail = $_POST['userEmail'];
   $userPhone = $_POST['userPhone'];
   $userQuestion = $_POST['userQuestion'];
 
@@ -35,7 +34,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}, его почта ${userEmail}.";
+    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его вопрос: ${userQuestion}.";
 
     if ($mail->send()) {
       echo "ok";
