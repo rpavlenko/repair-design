@@ -2190,8 +2190,8 @@ a {
     margin-bottom: 3.48rem;
   }
   .team {
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+    padding: 0;
     background-color: #181818;
   }
   .team__section-title {
@@ -2247,6 +2247,9 @@ a {
   }
   .team__text {
     color: #fff;
+  }
+  .team__text--invisible {
+    display: none;
   }
   .team__tag {
     bottom: -2.79rem;
