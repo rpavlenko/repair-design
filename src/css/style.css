@@ -852,7 +852,7 @@ a {
 .six-steps {
   margin-top: -500px;
   padding-top: 500px;
-  padding-bottom: 30rem;
+  padding-bottom: 33rem;
   color: #fff;
   background-color: #131313;
   background-image: url("../img/six-steps-bg.svg");
@@ -989,6 +989,137 @@ a {
 
 .swiper-button-next, .swiper-button-prev {
   outline: none;
+}
+
+.team {
+  margin-top: -29.5rem;
+  padding-bottom: 6rem;
+  margin-bottom: 20rem;
+}
+
+.team__section-title {
+  padding-top: 2rem;
+  margin-bottom: 5.98rem;
+}
+
+.team__row {
+  margin-bottom: 6.55rem;
+}
+
+.team__image {
+  margin-bottom: 1.24rem;
+}
+
+.team__description {
+  color: #fff;
+  margin: auto;
+  max-width: 32rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.428rem;
+  line-height: 1.928rem;
+  text-align: center;
+}
+
+.team__card {
+  position: relative;
+  padding-top: 0;
+  margin: auto;
+}
+
+.team__card-text {
+  max-width: 16.7rem;
+  margin-top: -6.1rem;
+  padding: 1.4rem 2.08rem 2rem 2.15rem;
+}
+
+.team__card-text--smaller {
+  padding-right: 1.97rem;
+}
+
+.team__title {
+  font-size: 1.285rem;
+  line-height: 1.78rem;
+  font-style: normal;
+  font-weight: normal;
+  margin-bottom: 0.2rem;
+}
+
+.team__text {
+  max-width: 40.785rem;
+  margin: auto;
+  text-align: center;
+  font-size: 1.42rem;
+  line-height: 2.35rem;
+}
+
+.team__text::before {
+  display: block;
+  margin: auto;
+  margin-bottom: 2.5rem;
+  content: '';
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  border-radius: 30px;
+}
+
+.team__role {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.285rem;
+  line-height: 1.857rem;
+  text-align: center;
+  color: #959595;
+}
+
+.team__tag {
+  position: absolute;
+  bottom: -2.79rem;
+  padding: 0.928rem 1.64rem 1rem 1.64rem;
+  margin-top: -2rem;
+  width: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.928rem;
+  line-height: 1.428rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon__manager::after {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  content: '';
+  width: 5rem;
+  height: 5rem;
+  background: #E3B873 url("../img/team/idea.svg") no-repeat center;
+}
+
+.icon__designer::after {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  content: '';
+  width: 5rem;
+  height: 5rem;
+  background: #E3B873 url("../img/team/pen.svg") no-repeat center;
+}
+
+.icon__foreman::after {
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  content: '';
+  width: 5rem;
+  height: 5rem;
+  background: #E3B873 url("../img/team/portfolio.svg") no-repeat center;
 }
 
 .hero {
@@ -1530,6 +1661,10 @@ a {
     max-width: 1240px;
     width: 100%;
   }
+  .container__team {
+    max-width: 1063px;
+    width: 100%;
+  }
   .six-steps {
     background-image: none;
   }
@@ -1545,6 +1680,9 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-basis: 32%;
+  }
+  .team__col {
+    flex-basis: 29%;
   }
 }
 
