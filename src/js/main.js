@@ -199,6 +199,21 @@ $(document).ready(function () {
         required: "Заполните поле",
         email: "Введите корректный email"
       }
+    }, 
+    submitHandler: function (form) {
+     $.ajax({
+       type: "POST",
+       url: "send.php",
+       data: $(form).serialize(),
+       success: function (response) {
+       alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+       $(form)[0].reset();
+       modal.removeClass('modal--visible');
+       },
+       error: function (response) {
+         console.error('Ошибка запроса ' + response);
+       }
+     });
     }
   });
 
@@ -277,6 +292,8 @@ $(document).ready(function () {
   // WOW animation
   new WOW().init();
 
+
+  // Yandex Map
   ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
         center: [55.786774, 49.142715],
