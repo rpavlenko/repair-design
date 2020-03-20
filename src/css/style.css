@@ -1050,13 +1050,13 @@ a {
   margin: auto;
   text-align: center;
   font-size: 1.42rem;
-  line-height: 2.35rem;
+  line-height: 2.48rem;
 }
 
 .team__text::before {
   display: block;
   margin: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.6rem;
   content: '';
   width: 55px;
   height: 2px;
