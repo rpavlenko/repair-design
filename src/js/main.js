@@ -270,6 +270,9 @@ $(document).ready(function () {
   $('.footer-form__input').mask('+7(000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
+  $('.modal-form__input').mask('+7(000) 000-00-00', {
+    placeholder: "Ваш номер телефона"
+  });
 
   // WOW animation
   new WOW().init();
@@ -307,5 +310,8 @@ $(document).ready(function () {
     myMap.geoObjects
       .add(myPlacemark)
   });
+
+
+
 });
 
