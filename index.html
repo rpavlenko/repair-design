@@ -827,6 +827,7 @@
             <input type="text" name="userQuestion" class="input form__input footer__input input--light" id="footer-user-question"
               placeholder="Я хочу спросить:">
           </div>
+
           <div class="policy footer__policy">
             <input type="checkbox" name="footer-policy-checkbox" id="footer-policy-checkbox" class="policy__checkbox" checked>
             <label for="footer-policy-checkbox" class="policy__label footer__policy-label policy__label--center">Я соглашаюсь на обработку
@@ -898,7 +899,7 @@
           <input type="email" name="userEmail" class="input form__input modal__input input--light" id="modal-user-email" placeholder="Ваш email">
         </div>
         <div class="policy modal__policy">
-          <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+          <input type="checkbox" name="policyAgreement" id="modal-policy-checkbox" class="policy__checkbox" checked>
           <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
         </div>
         <!-- /.policy -->
@@ -909,6 +910,17 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  <div class="modal-success">
+    <div class="modal-success__dialog">
+      <button class="modal-success__close"></button>
+      <h3 class="modal__title">Форма отправлена! </h3>
+      <p class="modal-succes__message">Подписывайся на группу в ВК:</p>
+      <a href="https://vk.com/glo_academy" target="_blank" rel="noopener noreferrer"><img class="modal-sucess__image" src="./src/img/vk.svg"
+          alt=""></a>
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal modal__success-->
 
   <script src="src/js/lazysizes.min.js" async></script>
   <!-- Images End -->

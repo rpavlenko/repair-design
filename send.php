@@ -4,6 +4,7 @@
   $userEmail = $_POST['userEmail'];
   $userPhone = $_POST['userPhone'];
   $userQuestion = $_POST['userQuestion'];
+  $mail->CharSet = "UTF-8";
 
 // Load Composer's autoloader
 
@@ -35,8 +36,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}, его почта ${userEmail}.
-    Его вопрос: ${userQuestion}";
+    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}, его почта ${userEmail}.";
 
     if ($mail->send()) {
       echo "ok";

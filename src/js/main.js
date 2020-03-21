@@ -41,6 +41,14 @@ $(document).ready(function () {
     modal.toggleClass('modal--visible');
   });
 
+  var modalSuccess = $('.modal-success');
+  closeSuccessBtn = $('.modal-success__close');
+  closeSuccessBtn.on('click', function () {
+    modalSuccess.toggleClass('modal-success--visible');
+  });
+
+
+
   // scroll up button
   $("#button").on("click", function () {
     $("html").animate({
@@ -186,7 +194,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      policyAgreement: "required",
     },
     messages: {
       userName: {
@@ -206,13 +215,14 @@ $(document).ready(function () {
        url: "send.php",
        data: $(form).serialize(),
        success: function (response) {
-       alert('Форма отправлена, мы свяжемся с вами через 10 минут')
-       $(form)[0].reset();
-       modal.removeClass('modal--visible');
-       },
-       error: function (response) {
-         console.error('Ошибка запроса ' + response);
-       }
+      //  alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+      modalSuccess.addClass('modal-success--visible');
+      $(form)[0].reset();
+      modal.removeClass('modal--visible');
+      },
+      error: function (response) {
+        console.error('Ошибка запроса ' + response);
+      }
      });
     }
   });
@@ -251,7 +261,7 @@ $(document).ready(function () {
         url: "footer-send.php",
         data: $(form).serialize(),
         success: function (response) {
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          modalSuccess.addClass('modal-success--visible');
           $(form)[0].reset();
         },
         error: function (response) {
@@ -295,7 +305,7 @@ $(document).ready(function () {
         url: "design-send.php",
         data: $(form).serialize(),
         success: function (response) {
-          alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          modalSuccess.addClass('modal-success--visible');
           $(form)[0].reset();
         },
         error: function (response) {
