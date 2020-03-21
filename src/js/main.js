@@ -189,7 +189,10 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        mobileRU: true,
+      },
       // compound rule
       userEmail: {
         required: true,
