@@ -34,7 +34,7 @@ function minify(){
 function serveSass() {
   return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
     .pipe(sass({
-      outputStyle: 'expanded',
+      outputStyle: 'compressed',
     }))
     .pipe(autoprefixer({
       cascade: false
