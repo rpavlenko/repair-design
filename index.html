@@ -7,8 +7,8 @@
   <title>Repair Design</title>
   <link rel='shortcut icon' type='image/ico' href='./src/img/favicon.ico' />
   <link rel="preload" href="./src/css/style.css" as="style">
-  <link rel="preload" href="/src/fonts/futura/FuturaBookC.woff" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="/src/fonts/futura/FuturaDemiC.woff" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="./src/fonts/futura/FuturaBookC.woff" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="./src/fonts/futura/FuturaDemiC.woff" as="font" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
@@ -208,13 +208,13 @@
           <h2 class="section-title__heading">Онлайн контроль</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image control__image">
-            <img src="src/img/video.svg" alt="video">
+            <img class="lazyload" data-src="src/img/video.svg" alt="video">
           </div>
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
         <div class="control__video video">
-          <img src="src/img/play-icon.svg" alt="play-icon" class="video__play">
+          <img class="lazyload" data-src="src/img/play-icon.svg" alt="play-icon" class="video__play">
         </div>
         <p class="control__text">
           На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за
@@ -252,7 +252,7 @@
           <h2 class="section-title__heading">Виды ремонта</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image ">
-            <img src="src/img/repair.svg" alt="video">
+            <img class="lazyload" data-src="src/img/repair.svg" alt="video">
           </div>
           <!-- /.section-title__image -->
         </div>
@@ -370,7 +370,7 @@
           <h2 class="section-title__heading project__heading">Дизайн проект</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image wow fadeInDown">
-            <img src="src/img/design-icon.svg" alt="design">
+            <img class="lazyload" data-src="src/img/design-icon.svg" alt="design">
           </div>
           <!-- /.section-title__image -->
           <p class="section-title__description project__title-description">Дизайн-проект не только помогает сделать
@@ -682,7 +682,7 @@
           <h2 class="section-title__heading team__heading">Наша команда</h2>
           <!-- /.section-title__heading -->
           <div class="section-title__image team__image">
-            <img src="src/img/team.svg" alt="team">
+            <img class="lazyload" data-src="src/img/team.svg" alt="team">
           </div>
           <!-- /.section-title__image -->
           <p class="section-title__description section-title__description team__description">Наша команда помогла стать счастливее
