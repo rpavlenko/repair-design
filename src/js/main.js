@@ -206,7 +206,7 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв",
       },
-      userPhone: "Телефон обязателен",
+      userPhone: "Телефон обязателен, 10 цифр",
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
@@ -241,7 +241,10 @@ $(document).ready(function () {
         maxlength: 15
       },
       // compound rule
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        mobileRU: true,
+      },
       userEmail: {
         required: true,
         email: true
@@ -253,7 +256,7 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв",
       },
-      userPhone: "Телефон обязателен",
+      userPhone: "Телефон обязателен, 10 цифр",
       userEmail: {
         required: "Заполните поле",
       }
@@ -285,7 +288,10 @@ $(document).ready(function () {
         maxlength: 15
       },
       // compound rule
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        mobileRU: true,
+      },
       userEmail: {
         required: true,
         email: true
@@ -297,7 +303,7 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 букв",
         maxlength: "Имя не больше 15 букв",
       },
-      userPhone: "Телефон обязателен",
+      userPhone: "Телефон обязателен, 10 цифр",
       userEmail: {
         required: "Заполните поле",
       }
