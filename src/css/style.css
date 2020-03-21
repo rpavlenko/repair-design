@@ -1344,6 +1344,7 @@ a {
 }
 
 .control__button {
+  max-height: 3.642rem;
   padding: 1.2857rem 4.7857rem 1.2857rem 4.1857rem;
   font-size: 1.07rem;
   line-height: 1.285rem;

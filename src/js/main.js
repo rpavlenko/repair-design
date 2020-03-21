@@ -195,7 +195,7 @@ $(document).ready(function () {
         required: true,
         email: true
       },
-      policyAgreement: "required",
+      // policyAgreement: "required",
     },
     messages: {
       userName: {
