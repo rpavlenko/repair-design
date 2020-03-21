@@ -1486,6 +1486,10 @@ a {
   min-height: 465px;
 }
 
+.footer__map--small {
+  display: none;
+}
+
 .footer__adress {
   max-width: 35rem;
   margin: auto;
@@ -2282,6 +2286,10 @@ a {
     display: none;
   }
   .footer__map {
+    display: none;
+  }
+  .footer__map--small {
+    display: block;
     width: 100%;
     min-height: 255px;
     max-height: 255px;
