@@ -2060,6 +2060,15 @@ a {
   .team__text {
     color: #fff;
   }
+  .project {
+    background: #181818;
+  }
+  .project__heading {
+    color: #fff;
+  }
+  .project__title-description {
+    color: #fff;
+  }
   .swiper__text {
     margin-bottom: 2.5rem;
   }
@@ -2085,20 +2094,9 @@ a {
   .section-title__heading {
     font-size: 1.84rem;
   }
-  .section-title__heading--white {
-    color: #fff;
-  }
   .section-title__description {
     margin-top: 1.7rem;
     margin-bottom: 3.25rem;
-  }
-  .section-title__description--white {
-    color: #fff;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.25rem;
-    max-width: 25.5rem;
-    line-height: 135.84%;
   }
   .card__title {
     font-size: 1.25rem;
