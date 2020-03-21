@@ -36,7 +36,10 @@
     &__six-steps
       max-width: 100%
     &__item
-      margin-right: 5rem  
+      margin-right: 5rem
+  .team
+    &__col
+      flex-basis: auto      
 @media screen and (max-width:  1340px)
   .nav
     &__item
@@ -122,11 +125,18 @@
     &__card
       margin-bottom: 7rem
   .team
+    margin-top: 0
+    margin-bottom: 0
+    padding-top: 0
     &__row
       padding-top: 4rem
       margin-bottom: 0
     &__card
-      margin-bottom: 7rem  
+      margin-bottom: 7rem
+    &__description
+      color: $thirdary
+    &__heading
+      color: $dark       
   .footer
     &__wrap
       margin-top: 0              
@@ -151,6 +161,10 @@
       color: $light
     &__card
       margin-bottom: 5.7rem
+  .team
+    &__card
+      &-text
+        margin-left: auto
   .modal
     &__dialog
       max-width: 60%
@@ -158,8 +172,12 @@
     width: 3.33rem
     height: 3.33rem
     &:after
-      line-height: 3.33rem                 
-@media screen and (max-width:  570px) 
+      line-height: 3.33rem   
+@media screen and (max-height:  580px)  
+  .hero
+    &__scroll-down
+      display: none                     
+@media screen and (max-width:  576px) 
   html
     font-size: 12px
   .contacts
@@ -177,17 +195,21 @@
     font-size: 1.91rem
   .section-title
     &__text
-      text-align: center
+      margin-bottom: 3rem
       width: 25rem
+      text-align: center
       font-style: normal
       font-weight: normal
       font-size: 1.16rem
       line-height: 1.99rem
-      margin-bottom: 3rem
     &__word
       display: block
       &::after
         display: none 
+    &__heading
+      color: $light
+    &__description
+      color: $light      
   .completed-projects
     &__heading
       &--center
@@ -273,12 +295,27 @@
       font-size: 1.37rem
       line-height: 1.85rem
   .types
+    background: $fourthdary
     &__text
-      margin-top: -15.2rem   
+      margin-top: -15.2rem
+  .project
+    background: $fourthdary        
   .footer     
     &__input-group
       flex-basis: 100%
-      border-bottom: 1px solid $light
+      border-bottom: 1px solid $light    
+  .team
+    margin-bottom: 0
+    background: $fourthdary
+    &__section
+      &-title
+        margin-bottom: 0
+    &__description
+      color: $light      
+    &__heading
+      color: $light         
+    &__text
+      color: $light      
   .swiper
       &__text
         margin-bottom: 2.5rem
@@ -481,8 +518,6 @@
       &::after
         width: 70px
         height: 70px       
-
-
   .adress
     &__wrap
       display: flex
@@ -515,7 +550,6 @@
       font-size: 1.08rem
       padding: 1.58rem 5.83rem
       margin-bottom: 1.8rem
-@media screen and (max-height:  580px)  
-  .hero
-    &__scroll-down
-      display: none 
+  .container
+    &__team
+      width: 85%    

@@ -1710,6 +1710,9 @@ a {
   .steps__item {
     margin-right: 5rem;
   }
+  .team__col {
+    flex-basis: auto;
+  }
 }
 
 @media screen and (max-width: 1340px) {
@@ -1807,12 +1810,23 @@ a {
   .project__card {
     margin-bottom: 7rem;
   }
+  .team {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
   .team__row {
     padding-top: 4rem;
     margin-bottom: 0;
   }
   .team__card {
     margin-bottom: 7rem;
+  }
+  .team__description {
+    color: #363636;
+  }
+  .team__heading {
+    color: #131313;
   }
   .footer__wrap {
     margin-top: 0;
@@ -1845,6 +1859,9 @@ a {
   .design__card {
     margin-bottom: 5.7rem;
   }
+  .team__card-text {
+    margin-left: auto;
+  }
   .modal__dialog {
     max-width: 60%;
   }
@@ -1857,7 +1874,13 @@ a {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-height: 580px) {
+  .hero__scroll-down {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
   html {
     font-size: 12px;
   }
@@ -1876,19 +1899,25 @@ a {
     font-size: 1.91rem;
   }
   .section-title__text {
-    text-align: center;
+    margin-bottom: 3rem;
     width: 25rem;
+    text-align: center;
     font-style: normal;
     font-weight: normal;
     font-size: 1.16rem;
     line-height: 1.99rem;
-    margin-bottom: 3rem;
   }
   .section-title__word {
     display: block;
   }
   .section-title__word::after {
     display: none;
+  }
+  .section-title__heading {
+    color: #fff;
+  }
+  .section-title__description {
+    color: #fff;
   }
   .completed-projects__heading--center {
     text-align: center;
@@ -2014,12 +2043,34 @@ a {
     font-size: 1.37rem;
     line-height: 1.85rem;
   }
+  .types {
+    background: #181818;
+  }
   .types__text {
     margin-top: -15.2rem;
+  }
+  .project {
+    background: #181818;
   }
   .footer__input-group {
     flex-basis: 100%;
     border-bottom: 1px solid #fff;
+  }
+  .team {
+    margin-bottom: 0;
+    background: #181818;
+  }
+  .team__section-title {
+    margin-bottom: 0;
+  }
+  .team__description {
+    color: #fff;
+  }
+  .team__heading {
+    color: #fff;
+  }
+  .team__text {
+    color: #fff;
   }
   .swiper__text {
     margin-bottom: 2.5rem;
@@ -2321,10 +2372,7 @@ a {
     padding: 1.58rem 5.83rem;
     margin-bottom: 1.8rem;
   }
-}
-
-@media screen and (max-height: 580px) {
-  .hero__scroll-down {
-    display: none;
+  .container__team {
+    width: 85%;
   }
 }
