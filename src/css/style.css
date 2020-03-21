@@ -2095,9 +2095,16 @@ a {
   .types__text {
     margin-top: -15.2rem;
   }
-  .footer__input-group {
-    flex-basis: 100%;
+  .footer__input {
+    color: #fff;
     border-bottom: 1px solid #fff;
+  }
+  .footer__input-group {
+    margin-bottom: 5.25rem;
+    flex-basis: 100%;
+  }
+  .footer__input-group:last-child {
+    margin-bottom: 0;
   }
   .team {
     margin-bottom: 0;
