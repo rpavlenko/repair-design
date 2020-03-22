@@ -79,7 +79,10 @@
           width: auto      
   .nav      
     display: none   
-
+@media screen and (max-width: 1060px)
+  .container
+    &__team
+      width: 92%  
 @media screen and (max-width: 1010px)
   .nav
     display: none
@@ -330,7 +333,15 @@
         font-size: 1.16rem 
       &--padding-bottom
         padding-bottom: 1.91rem  
-        
+  #footerPolicyAgreement-error
+    position: absolute
+    left: 130px
+    top: 25px
+  #controlPolicyAgreement-error 
+    position: absolute 
+    left: 0
+    top: 20px
+    font-size: 1rem    
 @media screen and (max-width: 375px)
   .container
     &__types, &__project, &__completed-projects, &__footer, &__team

@@ -1,12 +1,12 @@
-// document.addEventListener("DOMContentLoaded", function (event) {
-//   const modal = document.querySelector('.modal');
+document.addEventListener("DOMContentLoaded", function (event) {
+  const modal = document.querySelector('.modal');
 //   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
 //   const closeBtn = document.querySelector('.modal__close');
 
 
-//   const switchModal = () => {
-//     modal.classList.toggle('modal--visible');
-//   }
+  const switchModal = () => {
+    modal.classList.toggle('modal--visible');
+  }
     
 //   modalBtn.forEach(element => {
 //     element.addEventListener('click', switchModal);
@@ -14,21 +14,21 @@
 
 //   closeBtn.addEventListener('click', switchModal);
 
-//   // close modal when click out of modal
-//   window.onclick = function (event) {
-//     if (event.target == modal) {
-//       switchModal();
-//     }
-//   }
+  // close modal when click out of modal
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      switchModal();
+    }
+  }
   
-//   // close modal when Escape pressed
-//   window.addEventListener('keydown', function (event) {
-//     if (event.key === 'Escape') {
-//       modal.classList.remove('modal--visible')
-//     }
-//   })
+  // close modal when Escape pressed
+  window.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      modal.classList.remove('modal--visible')
+    }
+  })
 
-// });
+});
 
 $(document).ready(function () {
   var modal = $('.modal'),
@@ -198,7 +198,7 @@ $(document).ready(function () {
         required: true,
         email: true
       },
-      // policyAgreement: "required",
+      policyAgreement: "required",
     },
     messages: {
       userName: {
@@ -210,7 +210,8 @@ $(document).ready(function () {
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+      policyAgreement: "Согласие обязательно",
     }, 
     submitHandler: function (form) {
      $.ajax({
@@ -248,7 +249,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      footerPolicyAgreement: "required",
     },
     messages: {
       userName: {
@@ -259,7 +261,8 @@ $(document).ready(function () {
       userPhone: "Телефон обязателен, 10 цифр",
       userEmail: {
         required: "Заполните поле",
-      }
+      }, 
+      footerPolicyAgreement: "Согласие обязательно",
     },
     submitHandler: function (form) {
       $.ajax({
@@ -295,7 +298,8 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      controlPolicyAgreement: "required",
     },
     messages: {
       userName: {
@@ -306,7 +310,8 @@ $(document).ready(function () {
       userPhone: "Телефон обязателен, 10 цифр",
       userEmail: {
         required: "Заполните поле",
-      }
+      },
+      controlPolicyAgreement: "Согласие обязательно",
     },
     submitHandler: function (form) {
       $.ajax({
@@ -326,13 +331,13 @@ $(document).ready(function () {
 
   // phone mask
   $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
-  $('.control-phone__input').mask('+7(000) 000-00-00', {
+  $('.control-phone__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
-  $('.footer-form__input').mask('+7(000) 000-00-00', {
+  $('.footer-form__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
-  $('.modal-form__input').mask('+7(000) 000-00-00', {
+  $('.modal-form__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
 
