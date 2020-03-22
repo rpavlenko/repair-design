@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 //   const closeBtn = document.querySelector('.modal__close');
 
 
-  const switchModal = () => {
-    modal.classList.toggle('modal--visible');
-  }
+var switchModal = function switchModal() {
+  modal.classList.toggle('modal--visible');
+};
     
 //   modalBtn.forEach(element => {
 //     element.addEventListener('click', switchModal);
