@@ -1,40 +1,31 @@
-const {src, dest, watch, parallel} = require('gulp');
+const {src, dest, watch, parallel, series} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
+const minify = require('gulp-minify');
+const htmlmin = require('gulp-htmlmin');
+const tinypng = require('gulp-tinypng-compress');
 
 function bs() {
   serveSass();
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "./src"
     }
   });
 
-  watch("./*.html").on('change', browserSync.reload);
+  watch("./src/*.html").on('change', browserSync.reload);
   watch("./src/sass/**/*.sass", serveSass);
   watch("./src/sass/**/*.scss", serveSass);
   watch("./src/js/*.js").on('change', browserSync.reload);
-  // gulp.watch("./src/css/*.css").on('change', browserSync.reload);
 };
-
-function minify(){
-  return src('./src/css/*.css')
-    .pipe(cleanCSS({
-      compatibility: 'ie8'
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(dest('./src/css'));
-}
 
 function serveSass() {
   return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
     .pipe(sass({
-      outputStyle: 'compressed',
+      outputStyle: 'nested',
     }))
     .pipe(autoprefixer({
       cascade: false
@@ -43,5 +34,55 @@ function serveSass() {
     .pipe(browserSync.stream());
 };
 
-exports.serve = parallel(bs);
-exports.minify = minify;
+function buildCSS(done){
+  src('./src/css/**/**.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(dest('./dist/css/'));
+  done();
+}
+
+function buildJS(done) {
+  src(['./src/js/**.js', '!./src/js/**.min.js'])
+  .pipe(minify({
+    ext: {
+      min: '.js'
+    },
+  }))
+  .pipe(dest('./dist/js/'));
+  src('src/js/**.min.js')
+  .pipe(dest('./dist/js/'));
+  done();
+}
+
+function html(done) {
+  src('./src/**.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(dest('./dist/'));
+  done();
+}
+
+function php(done) {
+  src(['./src/**.php'])
+    .pipe(dest('./dist/'));
+  src('./src/phpmailer/**/**')
+  .pipe(dest('./dist/phpmailer/'));
+  done();
+}
+
+function fonts(done) {
+  src('./src/fonts/**/**')
+    .pipe(dest('./dist/fonts/'));
+  done();
+}
+
+function imagemin(done) {
+  src('src/img/**/**')
+    .pipe(tinypng({key: '14F03sDB2snqDn4L9fZtwgDwxdxVGS75',}))
+    .pipe(dest('./dist/img/'))
+  src('src/img/**/*.svg')
+    .pipe(dest('./dist/img/'))
+  done();
+}
+
+exports.serve = bs;
+exports.build = series(buildCSS, buildJS, html, php, fonts, imagemin);

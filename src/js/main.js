@@ -65,6 +65,7 @@ $(document).ready(function () {
     }
   });
 
+  // animation
   $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 1750) {
