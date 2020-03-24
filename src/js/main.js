@@ -1,18 +1,9 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal');
-//   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-//   const closeBtn = document.querySelector('.modal__close');
-
 
 var switchModal = function switchModal() {
   modal.classList.toggle('modal--visible');
 };
-    
-//   modalBtn.forEach(element => {
-//     element.addEventListener('click', switchModal);
-//   });
-
-//   closeBtn.addEventListener('click', switchModal);
 
   // close modal when click out of modal
   window.onclick = function (event) {
@@ -48,7 +39,6 @@ $(document).ready(function () {
   });
 
 
-
   // scroll up button
   $("#button").on("click", function () {
     $("html").animate({
@@ -65,27 +55,7 @@ $(document).ready(function () {
     }
   });
 
-  // // animation
-  // $(document).scroll(function () {
-  //   var y = $(this).scrollTop();
-  //   if (y > 1750) {
-  //     $('.types__card').addClass('fadeInDown', 1000);
-  //   } else {
-  //     $('.types__card').removeClass('fadeInDown', 1000);
-  //   }
-
-  //   if (y > 2750) {
-  //     $('.project__card').addClass('fadeInDown', 1000);
-  //   } else {
-  //     $('.project__card').removeClass('fadeInDown', 1000);
-  //   }
-  // });
-
-
-
   // sliders
-
-
   var completedProjectsSwiper = new Swiper('.completed-projects-swiper', {
     loop: true,
     navigation: {
