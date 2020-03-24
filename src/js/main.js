@@ -65,21 +65,23 @@ $(document).ready(function () {
     }
   });
 
-  // animation
-  $(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 1750) {
-      $('.types__card').addClass('fadeInDown', 1000);
-    } else {
-      $('.types__card').removeClass('fadeInDown', 1000);
-    }
+  // // animation
+  // $(document).scroll(function () {
+  //   var y = $(this).scrollTop();
+  //   if (y > 1750) {
+  //     $('.types__card').addClass('fadeInDown', 1000);
+  //   } else {
+  //     $('.types__card').removeClass('fadeInDown', 1000);
+  //   }
 
-    if (y > 2750) {
-      $('.project__card').addClass('fadeInDown', 1000);
-    } else {
-      $('.project__card').removeClass('fadeInDown', 1000);
-    }
-  });
+  //   if (y > 2750) {
+  //     $('.project__card').addClass('fadeInDown', 1000);
+  //   } else {
+  //     $('.project__card').removeClass('fadeInDown', 1000);
+  //   }
+  // });
+
+
 
   // sliders
 
@@ -341,9 +343,5 @@ $(document).ready(function () {
   $('.modal-form__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
-
-  // WOW animation
-  new WOW().init();
-
 });
 
