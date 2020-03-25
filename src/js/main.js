@@ -327,4 +327,20 @@ $(document).ready(function () {
   $('.modal-form__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
+
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'RHzzLqJWqHs',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
 });

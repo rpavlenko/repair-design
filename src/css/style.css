@@ -1341,7 +1341,8 @@ a {
 
 .video__play {
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
 
 .types {
   padding-bottom: 0; }
@@ -1793,6 +1794,8 @@ a {
     .nav__item:hover {
       color: #fff;
       cursor: default; }
+  .video__play {
+    cursor: default; }
   a:hover {
     cursor: default; }
   .button:hover, #button:hover {
@@ -2179,7 +2182,8 @@ a {
     height: 5.083rem;
     margin: auto; }
   .footer {
-    background: #181818; }
+    background: #181818;
+    padding-top: 0; }
     .footer__wrap {
       padding: 2.5rem 0;
       padding-bottom: 0;
