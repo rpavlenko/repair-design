@@ -1,6 +1,6 @@
 @media screen and (min-width:  1400px)
   .container
-    &__header
+    &__header, &__footer
       margin-left: 5.8rem
       max-width: 85%
     &__types
@@ -40,19 +40,16 @@
   .team
     &__col
       flex-basis: auto      
-@media screen and (max-width:  1340px)
+@media screen and (max-width:  1360px)
   .nav
     &__item
-      margin-right: 1rem
+      margin-right: 0.8rem
   .steps
     &__item
       margin-right: 0           
 @media screen and (max-width:  1260px)
   html
     font-size: 12px
-  .nav
-    &__item
-      margin-right: 1rem 
   .hero
     &__instagram
       display: none
@@ -77,18 +74,17 @@
       &__value
         &--second  
           width: auto      
-  .nav      
-    display: none   
 @media screen and (max-width: 1060px)
   .container
     &__team
       width: 92%  
-@media screen and (max-width: 1010px)
+  .contacts
+    &__phone
+      margin-right: 15px          
+@media screen and (max-width: 992px)
   .nav
-    display: none
-@media screen and (max-width: 970px)
-  .nav      
-    display: none
+    &__item
+      margin-right: 0.6rem  
   .modal
     &__dialog
       max-width: 100%
@@ -108,8 +104,6 @@
         display: flex
         order: 0
   .swiper-slide
-    // &__text
-    //   flex-basis: 50%   
     &__img
       margin: 0 auto     
   .section
@@ -142,7 +136,11 @@
       color: $dark       
   .footer
     &__wrap
-      margin-top: 0              
+      margin-top: 0
+@media screen and (max-width: 968px)
+  .nav
+    &__item
+      display: none
 @media screen and (max-width: 760px)  
   .row
     flex-direction: column

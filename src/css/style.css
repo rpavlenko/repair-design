@@ -1624,7 +1624,7 @@ a {
   text-align: center; }
 
 @media screen and (min-width: 1400px) {
-  .container__header {
+  .container__header, .container__footer {
     margin-left: 5.8rem;
     max-width: 85%; }
   .container__types {
@@ -1680,17 +1680,15 @@ a {
     -ms-flex-preferred-size: auto;
     flex-basis: auto; } }
 
-@media screen and (max-width: 1340px) {
+@media screen and (max-width: 1360px) {
   .nav__item {
-    margin-right: 1rem; }
+    margin-right: 0.8rem; }
   .steps__item {
     margin-right: 0; } }
 
 @media screen and (max-width: 1260px) {
   html {
     font-size: 12px; }
-  .nav__item {
-    margin-right: 1rem; }
   .hero__instagram {
     display: none; }
   .hero__content {
@@ -1706,21 +1704,17 @@ a {
   .swiper-button-next {
     left: auto; }
   .swiper-slide__value--second {
-    width: auto; }
-  .nav {
-    display: none; } }
+    width: auto; } }
 
 @media screen and (max-width: 1060px) {
   .container__team {
-    width: 92%; } }
+    width: 92%; }
+  .contacts__phone {
+    margin-right: 15px; } }
 
-@media screen and (max-width: 1010px) {
-  .nav {
-    display: none; } }
-
-@media screen and (max-width: 970px) {
-  .nav {
-    display: none; }
+@media screen and (max-width: 992px) {
+  .nav__item {
+    margin-right: 0.6rem; }
   .modal__dialog {
     max-width: 100%; }
   .row {
@@ -1789,6 +1783,10 @@ a {
       color: #131313; }
   .footer__wrap {
     margin-top: 0; } }
+
+@media screen and (max-width: 968px) {
+  .nav__item {
+    display: none; } }
 
 @media screen and (max-width: 760px) {
   .row {
