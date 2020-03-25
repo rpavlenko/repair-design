@@ -15,9 +15,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // close modal when Escape pressed
   window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
-      modal.classList.remove('modal--visible')
+      modal.classList.remove('modal--visible');
+    } else if (event.key === 'Esc') {
+      modal.classList.remove('modal--visible');
     }
   })
+
+
 
 });
 
