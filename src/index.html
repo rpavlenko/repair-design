@@ -9,6 +9,7 @@
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" crossorigin="anonymous" />
   <link rel="preload" href="./fonts/futura/FuturaDemiC.woff" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" as="font">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -1047,20 +1048,16 @@
         <button class="button button--primary modal__button">Отправить заяку</button>
       </form>
       <!-- /.form modal__form -->
+      <div class="success success__dialog">
+        <h3 class="succes__title">Заявка отправлена! </h3>
+        <p class="succes__message">Подписывайся на группу в ВК:</p>
+        <a href="https://vk.com/glo_academy" target="_blank" rel="noopener noreferrer"><img class="modal-sucess__image" src="./img/vk.svg" alt=""></a>
+      </div>
     </div>
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
-  <div class="modal-success">
-    <div class="modal-success__dialog">
-      <button class="modal-success__close"></button>
-      <h3 class="modal__title">Заявка отправлена! </h3>
-      <p class="modal-succes__message">Подписывайся на группу в ВК:</p>
-      <a href="https://vk.com/glo_academy" target="_blank" rel="noopener noreferrer"><img class="modal-sucess__image" src="./img/vk.svg" alt=""></a>
-    </div>
-    <!-- /.modal__dialog -->
-  </div>
-  <!-- /.modal modal__success-->
+
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="./js/jquery-3.4.1.min.js"></script>

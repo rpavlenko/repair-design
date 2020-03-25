@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   const modal = document.querySelector('.modal');
 
-var switchModal = function switchModal() {
-  modal.classList.toggle('modal--visible');
-};
+  var switchModal = function switchModal() {
+    modal.classList.toggle('modal--visible');
+  };
 
   // close modal when click out of modal
   window.onclick = function (event) {
@@ -11,7 +11,7 @@ var switchModal = function switchModal() {
       switchModal();
     }
   }
-  
+
   // close modal when Escape pressed
   window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
@@ -23,19 +23,20 @@ var switchModal = function switchModal() {
 
 $(document).ready(function () {
   var modal = $('.modal'),
-      modalBtn = $('[data-toggle=modal]');
-      closeBtn = $('.modal__close');
-  modalBtn.on('click', function(){
+    modalBtn = $('[data-toggle=modal]');
+  closeBtn = $('.modal__close');
+  successDialog = $('.success__dialog');
+  modalForm = $('.modal__form');
+  modalTitle = $('.modal__title');
+  modalBtn.on('click', function () {
+    $('.modal__title').show();
+    modalForm.show();
     modal.toggleClass('modal--visible');
-  });
-  closeBtn.on('click', function(){
-    modal.toggleClass('modal--visible');
-  });
+    successDialog.addClass('success__dialog--invisible');
 
-  var modalSuccess = $('.modal-success');
-  closeSuccessBtn = $('.modal-success__close');
-  closeSuccessBtn.on('click', function () {
-    modalSuccess.toggleClass('modal-success--visible');
+  });
+  closeBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
   });
 
 
@@ -66,19 +67,19 @@ $(document).ready(function () {
       el: '.completed-projects-pagination',
       type: 'bullets',
     },
-    
+
   });
   var next = $('.completed-projects-next');
   var prev = $('.completed-projects-prev');
   var bullets = $('.completed-projects-pagination');
   next.css('left', prev.width() + 30 + bullets.width() + 12);
   bullets.css('left', 30 + prev.width());
-  
+
 
   var sixStepsSwiper = new Swiper('.six-steps-swiper', {
     controller: {
-        control: fractionSwiper,
-    slidesPerView: 1,
+      control: fractionSwiper,
+      slidesPerView: 1,
     },
 
     pagination: {
@@ -100,7 +101,7 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next-six-steps',
       prevEl: '.swiper-button-prev-six-steps',
     },
-    
+
   });
 
   fractionSwiper.on('slideChange', function () {
@@ -185,22 +186,23 @@ $(document).ready(function () {
         email: "Введите корректный email"
       },
       policyAgreement: "Согласие обязательно",
-    }, 
+    },
     submitHandler: function (form) {
-     $.ajax({
-       type: "POST",
-       url: "send.php",
-       data: $(form).serialize(),
-       success: function (response) {
-      //  alert('Форма отправлена, мы свяжемся с вами через 10 минут')
-      modalSuccess.addClass('modal-success--visible');
-      $(form)[0].reset();
-      modal.removeClass('modal--visible');
-      },
-      error: function (response) {
-        console.error('Ошибка запроса ' + response);
-      }
-     });
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          //  alert('Форма отправлена, мы свяжемся с вами через 10 минут')
+          $(form)[0].reset();
+          modalForm.hide();
+          modalTitle.hide()
+          successDialog.removeClass('success__dialog--invisible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
   });
 
@@ -234,7 +236,7 @@ $(document).ready(function () {
       userPhone: "Телефон обязателен, 10 цифр",
       userEmail: {
         required: "Заполните поле",
-      }, 
+      },
       footerPolicyAgreement: "Согласие обязательно",
     },
     submitHandler: function (form) {
@@ -243,8 +245,11 @@ $(document).ready(function () {
         url: "footer-send.php",
         data: $(form).serialize(),
         success: function (response) {
-          modalSuccess.addClass('modal-success--visible');
           $(form)[0].reset();
+          modal.toggleClass('modal--visible');
+          modalForm.hide();
+          modalTitle.hide()
+          successDialog.removeClass('success__dialog--invisible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -292,8 +297,11 @@ $(document).ready(function () {
         url: "design-send.php",
         data: $(form).serialize(),
         success: function (response) {
-          modalSuccess.addClass('modal-success--visible');
           $(form)[0].reset();
+          modal.toggleClass('modal--visible');
+          modalForm.hide();
+          modalTitle.hide()
+          successDialog.removeClass('success__dialog--invisible');
         },
         error: function (response) {
           console.error('Ошибка запроса ' + response);
@@ -303,7 +311,9 @@ $(document).ready(function () {
   });
 
   // phone mask
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7 (___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00', {
+    placeholder: "+7 (___) ___-__-__"
+  });
   $('.control-phone__input').mask('+7 (000) 000-00-00', {
     placeholder: "Ваш номер телефона"
   });
@@ -314,4 +324,3 @@ $(document).ready(function () {
     placeholder: "Ваш номер телефона"
   });
 });
-
