@@ -1,6 +1,6 @@
 @media screen and (min-width:  1400px)
   .container
-    &__header, &__footer
+    &__header, &__footer-menu
       margin-left: 5.8rem
       max-width: 85%
     &__types
@@ -13,6 +13,9 @@
       width: 100%
     &__team
       max-width: 1063px
+      width: 100%
+    &__clients
+      max-width: 1236px
       width: 100%  
   .six-steps
     background-image: none    
@@ -32,6 +35,9 @@
     &__col
       flex-basis: 29%    
 @media screen and (max-width:  1439px)
+  .col
+    &__clients
+      flex-basis: 30%   
   .steps
     &__six-steps
       max-width: 100%
@@ -39,14 +45,19 @@
       margin-right: 5rem
   .team
     &__col
-      flex-basis: auto      
+      flex-basis: auto
 @media screen and (max-width:  1360px)
   .nav
     &__item
       margin-right: 0.8rem
   .steps
     &__item
-      margin-right: 0           
+      margin-right: 0 
+  .clients
+    &__title
+      max-width: 6rem
+    &__tag
+      font-size: 1rem          
 @media screen and (max-width:  1260px)
   html
     font-size: 12px
@@ -149,7 +160,10 @@
     &__description
       color: $thirdary
     &__heading
-      color: $dark       
+      color: $dark      
+  .clients
+    padding-top: 0
+    margin-bottom: 15rem     
   .footer
     &__wrap
       margin-top: 0
@@ -157,6 +171,8 @@
   .nav
     &__item
       display: none
+  .clients
+    margin-bottom: 0    
 @media screen and (max-width: 760px)  
   .row
     flex-direction: column
@@ -311,7 +327,9 @@
       line-height: 1.85rem
   .types
     &__text
-      margin-top: -15.2rem   
+      margin-top: -15.2rem
+  .project
+    padding-top: 0     
   .footer     
     &__input
       color: $light
@@ -333,6 +351,8 @@
       color: $light         
     &__text
       color: $light
+  .clients
+    display: none    
   .project
     background: $fourthdary
     &__heading
@@ -574,3 +594,8 @@
   .container
     &__team
       width: 85%    
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+  .video__play
+    margin-top: 150px
+
+  
