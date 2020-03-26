@@ -60,15 +60,18 @@
     &__title
       max-width: 6rem
     &__tag
-      font-size: 1rem          
+      font-size: 1rem 
+  .adress
+    &__social-icon
+      &-email
+        width: 30px
+        height: 30px
+      &-insta 
+        width: 30px
+        height: 30px                      
 @media screen and (max-width:  1260px)
   html
     font-size: 12px
-  .hero
-    &__instagram
-      display: none
-    &__content
-      margin-left: 0
   .col
     &-30
       &__six-steps
@@ -96,6 +99,11 @@
     &__phone
       margin-right: 15px          
 @media screen and (max-width: 992px)
+  .hero
+    &__instagram
+      display: none
+    &__content
+      margin-left: 0
   .nav
     &__item
       margin-right: 0.6rem
@@ -278,6 +286,7 @@
       padding: 1.58rem 5.83rem
       margin-bottom: 1.8rem
   .control
+    padding-bottom: 0
     background-color: $dark
     &__text
       margin-bottom: 2.16rem
@@ -330,6 +339,9 @@
       margin-bottom: -2.08rem
       font-size: 1.37rem
       line-height: 1.85rem
+  .video
+    &__play
+      max-width: 25%    
   .types
     &__text
       margin-top: -15.2rem  
@@ -361,7 +373,7 @@
     &__heading
       color: $light
     &__title-description
-      color: $light            
+      color: $light        
   .swiper
       &__text
         margin-bottom: 2.5rem
@@ -575,11 +587,11 @@
       margin: 0
       &-email
         margin-right: 1.8rem
-        width: 39px
-        height: 39px
+        width: 30px
+        height: 30px
       &-insta 
-        width: 39px
-        height: 39px 
+        width: 30px
+        height: 30px 
   #footerPolicyAgreement-error
     top: -15px       
 
