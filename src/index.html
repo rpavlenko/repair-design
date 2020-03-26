@@ -9,7 +9,6 @@
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="preload" href="./fonts/futura/FuturaBookC.woff" as="font" crossorigin="anonymous" />
   <link rel="preload" href="./fonts/futura/FuturaDemiC.woff" as="font" crossorigin="anonymous" />
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" as="font">
   <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -236,7 +235,7 @@
         </div>
         <!-- /.section-title -->
         <div class="control__video video" id="player">
-          <script src="https://www.youtube.com/iframe_api"></script>
+          <script src="https://www.youtube.com/iframe_api" async></script>
           <img src="#" data-src="./img/play-icon.svg" alt="play-icon" class="video__play lazyload">
         </div>
         <p class="control__text">
@@ -990,8 +989,8 @@
           <!-- /.footer footer__adress -->
         </div>
         <div class="map footer__map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15321.835205747488!2d39.72580268190657!3d47.24507668523314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2spl!4v1585178907031!5m2!1sru!2spl"
+          <iframe data-aload data-original
+            data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15321.835205747488!2d39.72580268190657!3d47.24507668523314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9b47a7e7029%3A0x9e8cb546a10601cc!2z0KLQpiAi0JTQtdC60L7RgNGD0Lwi!5e0!3m2!1sru!2spl!4v1585178907031!5m2!1sru!2spl"
             style="border:0;width:100%;height:100%" allowfullscreen="" aria-hidden="false" tabindex="0" class="lazyload"></iframe>
         </div>
       </div>
@@ -1060,15 +1059,13 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
-
-
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/jquery.validate.min.js"></script>
-  <script src="./js/additional-methods.min.js"></script>
   <script src="./js/jquery.mask.min.js"></script>
   <script src="./js/lazysizes.min.js" async></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/additional-methods.min.js"></script>
+  <script src="./js/main.js" async></script>
 </body>
 
 </html>

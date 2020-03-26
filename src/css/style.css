@@ -965,7 +965,6 @@ a {
 
 .clients {
   margin-bottom: 20rem;
-  padding-top: 0;
   padding-bottom: 0; }
   .clients__text {
     position: relative;
@@ -1230,7 +1229,7 @@ a {
     letter-spacing: -0.03rem; }
 
 .control {
-  padding: 0; }
+  padding-top: 0; }
   .control__section-title {
     margin-bottom: 2.214rem;
     margin-top: -23.2rem; }
@@ -1344,15 +1343,15 @@ a {
   margin: 0 auto;
   cursor: pointer; }
 
-.types {
-  padding-bottom: 0; }
-  .types__card {
-    padding-top: 1rem; }
-  .types__text {
-    margin-top: -11.2rem; }
-  .types__pricetag {
-    padding: 1.2rem 0;
-    text-align: center; }
+.types__card {
+  padding-top: 1rem; }
+
+.types__text {
+  margin-top: -11.2rem; }
+
+.types__pricetag {
+  padding: 1.2rem 0;
+  text-align: center; }
 
 .project {
   padding-bottom: 0; }
