@@ -2,12 +2,16 @@
   margin-bottom: 20rem
   padding-top: 7rem
   padding-bottom: 0
+  &__row
+    align-items: stretch
+  &__card
+    height: 100%
   &__text
-    position: relative
+    height: 100%
+    position: static
     margin-top: 0
-    margin-bottom: 4.5rem
     padding: 1.71rem 2.28rem 2.5rem 1.42rem
-    max-width: 100%
+    max-width: 26.85rem
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
   &__info
     margin-bottom: 0.6rem
@@ -22,7 +26,6 @@
   &__title
     margin-bottom: 0  
     margin-top: -5px
-    display: inline-block
     font-style: normal
     font-weight: normal
     line-height: 1.64rem
@@ -32,9 +35,6 @@
       margin-bottom: 2.15rem
   &__description
     margin-top: 0
-    margin-bottom: 2.5rem
-    max-width: 23.14rem
-    width: 100%
     font-style: normal
     font-weight: normal
     font-size: 1.071rem
@@ -48,9 +48,7 @@
     line-height: 1.714rem
     text-transform: uppercase
     &-wrap
-      position: absolute
-      left: 0
-      margin-top: 0.5rem
+      margin-top: -2rem
       display: flex
       flex-direction: row
       align-items: center

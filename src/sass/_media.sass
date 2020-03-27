@@ -98,12 +98,15 @@
   .contacts
     &__phone
       margin-right: 15px          
-@media screen and (max-width: 992px)
+@media screen and (max-width: 991px)
   .hero
     &__instagram
       display: none
     &__content
       margin-left: 0
+    &__scroll-down
+      &:hover
+        color: $light
   .nav
     &__item
       margin-right: 0.6rem
@@ -113,10 +116,20 @@
   .video
     &__play
       max-width: 20%
-      cursor: default      
+      cursor: default
+      &:hover
+        box-shadow: none          
   a
     &:hover
-      cursor: default      
+      cursor: default
+  .contacts
+    &__phone
+      &:hover
+        color: $primary
+  .menu
+    &__logo
+      &:hover
+        color: $primary               
   .button, #button
     &:hover
       cursor: default
@@ -182,6 +195,20 @@
   .footer
     &__wrap
       margin-top: 0
+  #button
+    display: none 
+  .video
+    &__play
+      &:hover
+        box-shadow: none
+  .adress
+    &__social-icon
+      &-email
+        &:hover
+          box-shadow: none
+      &-insta
+        &:hover
+          box-shadow: none                 
 @media screen and (max-width: 968px)
   .nav
     &__item
@@ -194,7 +221,8 @@
     align-items: center
   .section-title
     &__description
-      max-width: 37.5rem    
+      max-width: 37.5rem
+
   .types, .project
     &__card
       margin-bottom: 5rem
@@ -241,7 +269,6 @@
         width: 100%      
   .title
     font-size: 1.91rem
-  .section-title
     &__text
       margin-bottom: 3rem
       width: 25rem
@@ -349,7 +376,8 @@
       line-height: 1.85rem
   .video
     &__play
-      max-width: 25%    
+      max-width: 25%
+      margin-top: 25px
   .types
     &__text
       margin-top: -15.2rem  
@@ -398,7 +426,17 @@
   #controlPolicyAgreement-error 
     position: absolute 
     top: 20px
-    font-size: 1rem    
+    font-size: 1rem
+  #player
+    height: 17.25rem  
+@media screen and (max-width: 500px)
+  .footer
+    &__map
+      width: 100%
+      min-height: 255px
+      max-height: 255px
+      order: -1
+      margin-bottom: 3.48rem
 @media screen and (max-width: 375px)
   .container
     &__types, &__project, &__completed-projects, &__footer, &__team
@@ -413,7 +451,6 @@
       margin-bottom: 3.25rem
   .hero
     &__title
-
   .card
     &__title
       font-size: 1.25rem    
@@ -511,12 +548,6 @@
       line-height: 1.85rem
     &__menu
       display: none
-    &__map
-      width: 100%
-      min-height: 255px
-      max-height: 255px
-      order: -1
-      margin-bottom: 3.48rem
   .team
     margin: 0
     padding: 0
@@ -607,12 +638,8 @@
         width: 35px
         height: 35px
         background: $primary url('../img/insta-big.svg') no-repeat center
-  #button
-    display: none      
   #footerPolicyAgreement-error
     top: -15px
-  #player
-    height: 17.25rem
 @media screen and (max-width: 360px)
   html
     font-size: 10px

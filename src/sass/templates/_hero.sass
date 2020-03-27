@@ -40,7 +40,9 @@
     font-size: 0.93rem
     font-family: 'Futura Demi', cursive
     &:hover
+      background: $primary
       transition: color 0.2s
+      color: $dark
   &__instagram
     position: absolute
     left: 0
@@ -64,6 +66,8 @@
     text-transform: uppercase
     text-decoration: none
     color: $light
+    &:hover
+      color: $primary
     &::after
       margin-left: 1.15rem
       margin-top: -0.1rem
@@ -88,12 +92,17 @@
     transform: rotate(90deg)
     line-height: 0.8
     font-size: 1.1rem
+    &:hover
+      color: $light
     &::after
+      position: absolute
       content: ''
+      top: 0.35rem
+      left: 6.07rem
       width: 50px
       height: 1px
       background-color: $primary
-      margin-left: 0.76rem
+      margin-left: 0.76rem    
 .title
   margin-top: 0.85rem
   font-family: 'Yeseva One', cursive

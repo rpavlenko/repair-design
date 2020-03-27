@@ -394,6 +394,8 @@ template {
     color: #fff; }
   .input--light::placeholder {
     color: #fff; }
+  .input--light::-moz-placeholder, .input--light :-moz-placeholder {
+    opacity: 1; }
 
 .policy {
   position: relative; }
@@ -678,6 +680,10 @@ img {
     font-size: 1.075rem;
     color: #E3B873;
     text-transform: uppercase; }
+    .menu__logo:hover {
+      color: #fff;
+      -webkit-transition: color 0.2s;
+      transition: color 0.2s; }
 
 .nav__item {
   color: #fff;
@@ -694,6 +700,10 @@ img {
 
 .contacts__phone {
   margin-right: 45px; }
+  .contacts__phone:hover {
+    color: #fff;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
 
 .contacts__button {
   font-size: 0.97rem; }
@@ -969,12 +979,19 @@ a {
   margin-bottom: 20rem;
   padding-top: 7rem;
   padding-bottom: 0; }
+  .clients__row {
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+  .clients__card {
+    height: 100%; }
   .clients__text {
-    position: relative;
+    height: 100%;
+    position: static;
     margin-top: 0;
-    margin-bottom: 4.5rem;
     padding: 1.71rem 2.28rem 2.5rem 1.42rem;
-    max-width: 100%;
+    max-width: 26.85rem;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
   .clients__info {
     margin-bottom: 0.6rem;
@@ -998,7 +1015,6 @@ a {
   .clients__title {
     margin-bottom: 0;
     margin-top: -5px;
-    display: inline-block;
     font-style: normal;
     font-weight: normal;
     line-height: 1.64rem;
@@ -1008,9 +1024,6 @@ a {
       margin-bottom: 2.15rem; }
   .clients__description {
     margin-top: 0;
-    margin-bottom: 2.5rem;
-    max-width: 23.14rem;
-    width: 100%;
     font-style: normal;
     font-weight: normal;
     font-size: 1.071rem;
@@ -1024,9 +1037,7 @@ a {
     line-height: 1.714rem;
     text-transform: uppercase; }
     .clients__tag-wrap {
-      position: absolute;
-      left: 0;
-      margin-top: 0.5rem;
+      margin-top: -2rem;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -1136,8 +1147,10 @@ a {
     font-size: 0.93rem;
     font-family: 'Futura Demi', cursive; }
     .hero__button:hover {
+      background: #E3B873;
       -webkit-transition: color 0.2s;
-      transition: color 0.2s; }
+      transition: color 0.2s;
+      color: #131313; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -1170,6 +1183,8 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
+    .hero__scroll-down:hover {
+      color: #E3B873; }
     .hero__scroll-down::after {
       margin-left: 1.15rem;
       margin-top: -0.1rem;
@@ -1211,8 +1226,13 @@ a {
     transform: rotate(90deg);
     line-height: 0.8;
     font-size: 1.1rem; }
+    .instagram__link:hover {
+      color: #fff; }
     .instagram__link::after {
+      position: absolute;
       content: '';
+      top: 0.35rem;
+      left: 6.07rem;
       width: 50px;
       height: 1px;
       background-color: #E3B873;
@@ -1300,7 +1320,18 @@ a {
       -webkit-flex-basis: 30%;
       -ms-flex-preferred-size: 30%;
       flex-basis: 30%; }
+    .control__input::-webkit-input-placeholder {
+      color: #131313; }
+    .control__input::-moz-placeholder {
+      color: #131313; }
+    .control__input:-ms-input-placeholder {
+      color: #131313; }
+    .control__input::-ms-input-placeholder {
+      color: #131313; }
+    .control__input::placeholder {
+      color: #131313; }
   .control__label {
+    color: #131313;
     margin-bottom: -1px; }
   .control__button {
     max-height: 3.642rem;
@@ -1309,6 +1340,8 @@ a {
     line-height: 1.285rem;
     -webkit-animation: pulse 2s infinite;
     animation: pulse 2s infinite; }
+    .control__button:hover {
+      color: #131313; }
   .control__policy {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -1344,7 +1377,13 @@ a {
 .video__play {
   position: relative;
   margin: 0 auto;
+  max-width: 145px;
+  max-height: 145px;
+  margin-top: 10.35rem;
   cursor: pointer; }
+  .video__play:hover {
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(227, 184, 115, 0.2); }
 
 .types__card {
   padding-top: 1rem; }
@@ -1500,6 +1539,8 @@ a {
   height: 30px;
   border: none;
   border-radius: 50%; }
+  .adress__social-icon-email:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
 
 .adress__social-icon-insta {
   content: '';
@@ -1508,6 +1549,8 @@ a {
   height: 30px;
   border: none;
   border-radius: 50%; }
+  .adress__social-icon-insta:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
 
 .modal {
   opacity: 0;
@@ -1583,7 +1626,7 @@ a {
     flex-direction: column;
     margin-bottom: 3.428rem; }
   .modal__input:last-of-type {
-    margin-bottom: 1rem; }
+    margin-bottom: 0; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
@@ -1799,11 +1842,13 @@ a {
   .contacts__phone {
     margin-right: 15px; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .hero__instagram {
     display: none; }
   .hero__content {
     margin-left: 0; }
+  .hero__scroll-down:hover {
+    color: #fff; }
   .nav__item {
     margin-right: 0.6rem; }
     .nav__item:hover {
@@ -1812,8 +1857,14 @@ a {
   .video__play {
     max-width: 20%;
     cursor: default; }
+    .video__play:hover {
+      box-shadow: none; }
   a:hover {
     cursor: default; }
+  .contacts__phone:hover {
+    color: #E3B873; }
+  .menu__logo:hover {
+    color: #E3B873; }
   .button:hover, #button:hover {
     cursor: default;
     color: #fff;
@@ -1892,7 +1943,15 @@ a {
     padding-top: 0;
     margin-bottom: 15rem; }
   .footer__wrap {
-    margin-top: 0; } }
+    margin-top: 0; }
+  #button {
+    display: none; }
+  .video__play:hover {
+    box-shadow: none; }
+  .adress__social-icon-email:hover {
+    box-shadow: none; }
+  .adress__social-icon-insta:hover {
+    box-shadow: none; } }
 
 @media screen and (max-width: 968px) {
   .nav__item {
@@ -1952,18 +2011,18 @@ a {
     width: 100%; }
   .title {
     font-size: 1.91rem; }
-  .section-title__text {
-    margin-bottom: 3rem;
-    width: 25rem;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.16rem;
-    line-height: 1.99rem; }
-  .section-title__word {
-    display: block; }
-    .section-title__word::after {
-      display: none; }
+    .title__text {
+      margin-bottom: 3rem;
+      width: 25rem;
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.16rem;
+      line-height: 1.99rem; }
+    .title__word {
+      display: block; }
+      .title__word::after {
+        display: none; }
   .completed-projects__heading--center {
     text-align: center;
     margin-bottom: 1.9rem; }
@@ -2089,7 +2148,8 @@ a {
       font-size: 1.37rem;
       line-height: 1.85rem; }
   .video__play {
-    max-width: 25%; }
+    max-width: 25%;
+    margin-top: 25px; }
   .types__text {
     margin-top: -15.2rem; }
   .footer__input {
@@ -2136,7 +2196,20 @@ a {
   #controlPolicyAgreement-error {
     position: absolute;
     top: 20px;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  #player {
+    height: 17.25rem; } }
+
+@media screen and (max-width: 500px) {
+  .footer__map {
+    width: 100%;
+    min-height: 255px;
+    max-height: 255px;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    margin-bottom: 3.48rem; } }
 
 @media screen and (max-width: 375px) {
   .container__types, .container__project, .container__completed-projects, .container__footer, .container__team {
@@ -2254,15 +2327,6 @@ a {
       line-height: 1.85rem; }
     .footer__menu {
       display: none; }
-    .footer__map {
-      width: 100%;
-      min-height: 255px;
-      max-height: 255px;
-      -webkit-box-ordinal-group: 0;
-      -webkit-order: -1;
-      -ms-flex-order: -1;
-      order: -1;
-      margin-bottom: 3.48rem; }
   .team {
     margin: 0;
     padding: 0;
@@ -2358,12 +2422,8 @@ a {
       width: 35px;
       height: 35px;
       background: #E3B873 url("../img/insta-big.svg") no-repeat center; }
-  #button {
-    display: none; }
   #footerPolicyAgreement-error {
-    top: -15px; }
-  #player {
-    height: 17.25rem; } }
+    top: -15px; } }
 
 @media screen and (max-width: 360px) {
   html {

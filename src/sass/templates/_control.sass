@@ -47,7 +47,10 @@
       display: flex
       flex-direction: column
       flex-basis: 30%
+    &::placeholder
+      color: $dark  
   &__label
+    color: $dark
     margin-bottom: -1px
   &__button
     max-height: 3.642rem
@@ -55,6 +58,8 @@
     font-size: 1.07rem
     line-height: 1.285rem
     animation: pulse 2s infinite
+    &:hover
+      color: $dark
   &__policy
     flex-basis: 100%
     margin-top: 1.2rem
@@ -76,4 +81,10 @@
   &__play
     position: relative
     margin: 0 auto
+    max-width: 145px
+    max-height: 145px
+    margin-top: 10.35rem
     cursor: pointer
+    &:hover
+      border-radius: 50%
+      box-shadow: 0 0 3px rgba($primary, 0.2)

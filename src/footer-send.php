@@ -38,7 +38,7 @@ try {
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его вопрос: ${userQuestion}.";
 
     if ($mail->send()) {
-      echo "ok";
+      echo "Message sent";
     } else {
       echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
     }
