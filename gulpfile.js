@@ -82,6 +82,8 @@ function imagemin(done) {
     .pipe(dest('./dist/img/'))
   src('src/img/**/*.svg')
     .pipe(dest('./dist/img/'))
+  src('src/img/**/*.ico')
+    .pipe(dest('./dist/img/'))
   done();
 }
 
