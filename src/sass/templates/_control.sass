@@ -44,13 +44,14 @@
     color: $dark
     padding-top: 0.3rem
     &-group
+      position: relative
       display: flex
       flex-direction: column
       flex-basis: 30%
     &::placeholder
       color: $dark  
   &__label
-    color: $dark
+    color: rgba(54, 54, 54, 0.5)
     margin-bottom: -1px
   &__button
     max-height: 3.642rem
@@ -68,7 +69,6 @@
     &-label
       justify-content: center
 #policyAgreement-error
-  position: absolute
   left: 0
   top: 25px
 #footerPolicyAgreement-error
