@@ -110,8 +110,10 @@
       &:hover
         color: $light
         cursor: default
-  .video__play
-    cursor: default      
+  .video
+    &__play
+      max-width: 20%
+      cursor: default      
   a
     &:hover
       cursor: default      
@@ -269,12 +271,18 @@
       width: 100%
       margin: 0 auto 2.75rem auto
   .hero
+    height: auto
+    padding-bottom: 3.333rem
+    &::after
+      display: none
     &__scroll-down
       display: none
     &__content
       max-width: 26.75rem
-      margin-top: 8.3rem
+      margin-top: 11.5rem  
       margin-left: -1rem
+    &__title
+      line-height: 2.7rem
     &__text
       margin-bottom: 2.7rem
       font-size: 1.5rem
@@ -403,6 +411,9 @@
     &__description
       margin-top: 1.7rem
       margin-bottom: 3.25rem
+  .hero
+    &__title
+
   .card
     &__title
       font-size: 1.25rem    
@@ -436,6 +447,9 @@
   .project
     padding-bottom: 0
     background-color: $fourthdary
+    &__title-description
+      font-size: 1.25rem
+      max-width: 25.5rem
     &__card
       margin-bottom: 5.65rem
       &--text
@@ -469,8 +483,7 @@
     background: $fourthdary
     padding-top: 0
     &__wrap    
-      padding: 2.5rem 0
-      padding-bottom: 0
+      padding: 0
       background: $fourthdary
     &__title
       margin-bottom: 4.63rem
@@ -587,11 +600,11 @@
       margin: 0
       &-email
         margin-right: 1.8rem
-        width: 30px
-        height: 30px
+        width: 35px
+        height: 35px
       &-insta 
-        width: 30px
-        height: 30px 
+        width: 35px
+        height: 35px 
   #footerPolicyAgreement-error
     top: -15px       
 

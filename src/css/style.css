@@ -1808,6 +1808,7 @@ a {
       color: #fff;
       cursor: default; }
   .video__play {
+    max-width: 20%;
     cursor: default; }
   a:hover {
     cursor: default; }
@@ -1977,22 +1978,29 @@ a {
     height: 16.83rem;
     width: 100%;
     margin: 0 auto 2.75rem auto; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 26.75rem;
-    margin-top: 8.3rem;
-    margin-left: -1rem; }
-  .hero__text {
-    margin-bottom: 2.7rem;
-    font-size: 1.5rem;
-    line-height: 135.84%; }
-  .hero__button {
-    display: block;
-    min-width: 28.21rem;
-    font-size: 1.08rem;
-    padding: 1.58rem 5.83rem;
-    margin-bottom: 1.8rem; }
+  .hero {
+    height: auto;
+    padding-bottom: 3.333rem; }
+    .hero::after {
+      display: none; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      max-width: 26.75rem;
+      margin-top: 11.5rem;
+      margin-left: -1rem; }
+    .hero__title {
+      line-height: 2.7rem; }
+    .hero__text {
+      margin-bottom: 2.7rem;
+      font-size: 1.5rem;
+      line-height: 135.84%; }
+    .hero__button {
+      display: block;
+      min-width: 28.21rem;
+      font-size: 1.08rem;
+      padding: 1.58rem 5.83rem;
+      margin-bottom: 1.8rem; }
   .control {
     padding-bottom: 0;
     background-color: #131313; }
@@ -2168,6 +2176,9 @@ a {
   .project {
     padding-bottom: 0;
     background-color: #181818; }
+    .project__title-description {
+      font-size: 1.25rem;
+      max-width: 25.5rem; }
     .project__card {
       margin-bottom: 5.65rem; }
       .project__card--text {
@@ -2199,8 +2210,7 @@ a {
     background: #181818;
     padding-top: 0; }
     .footer__wrap {
-      padding: 2.5rem 0;
-      padding-bottom: 0;
+      padding: 0;
       background: #181818; }
     .footer__title {
       margin-bottom: 4.63rem;
@@ -2339,11 +2349,11 @@ a {
     margin: 0; }
     .adress__social-icon-email {
       margin-right: 1.8rem;
-      width: 30px;
-      height: 30px; }
+      width: 35px;
+      height: 35px; }
     .adress__social-icon-insta {
-      width: 30px;
-      height: 30px; }
+      width: 35px;
+      height: 35px; }
   #footerPolicyAgreement-error {
     top: -15px; } }
 
