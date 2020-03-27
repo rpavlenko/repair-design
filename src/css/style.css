@@ -1496,16 +1496,16 @@ a {
   margin-right: 1.07rem;
   content: '';
   background: #E3B873 url("../img/email.svg") no-repeat center;
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 50%; }
 
 .adress__social-icon-insta {
   content: '';
   background: #E3B873 url("../img/insta.svg") no-repeat center;
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 50%; }
 
@@ -2352,10 +2352,12 @@ a {
     .adress__social-icon-email {
       margin-right: 1.8rem;
       width: 35px;
-      height: 35px; }
+      height: 35px;
+      background: #E3B873 url("../img/email-big.svg") no-repeat center; }
     .adress__social-icon-insta {
       width: 35px;
-      height: 35px; }
+      height: 35px;
+      background: #E3B873 url("../img/insta-big.svg") no-repeat center; }
   #button {
     display: none; }
   #footerPolicyAgreement-error {
