@@ -728,6 +728,7 @@ img {
     -webkit-flex-basis: 38.3%;
     -ms-flex-preferred-size: 38.3%;
     flex-basis: 38.3%;
+    margin-right: 2rem;
     margin-bottom: 2.5rem; }
   .completed-projects--padding-bottom {
     padding-bottom: 4.8rem; }
@@ -1037,7 +1038,8 @@ a {
     font-weight: normal;
     font-size: 1.214rem;
     line-height: 1.714rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5); }
     .clients__tag-wrap {
       margin-top: -2rem;
       display: -webkit-box;
@@ -1456,7 +1458,8 @@ a {
     max-width: 37.142rem;
     margin: auto; }
   .footer__input {
-    padding-top: 0.3rem; }
+    padding-top: 0.3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
     .footer__input-group {
       position: relative;
       display: -webkit-box;
@@ -1925,6 +1928,7 @@ a {
     -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
+    margin-right: 0;
     margin-top: 2rem; }
   .six-steps {
     display: none; }
@@ -1990,6 +1994,8 @@ a {
       margin-bottom: 5.7rem; }
   .team__card-text {
     margin-left: auto; }
+  .completed-projects__slide-heading {
+    margin-right: 2rem; }
   .modal__dialog {
     max-width: 60%; }
   #button {
@@ -1997,6 +2003,10 @@ a {
     height: 3.33rem; }
     #button:after {
       line-height: 3.33rem; } }
+
+@media screen and (max-width: 601px) {
+  .completed-projects__slide-heading {
+    margin-right: 0; } }
 
 @media screen and (max-height: 580px) {
   .hero__scroll-down {

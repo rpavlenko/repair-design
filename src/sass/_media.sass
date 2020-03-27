@@ -170,6 +170,7 @@
       padding-bottom: 1.7rem
     &__slide-text
       flex-basis: 50%
+      margin-right: 0
       margin-top: 2rem    
   .six-steps
     display: none
@@ -222,7 +223,6 @@
   .section-title
     &__description
       max-width: 37.5rem
-
   .types, .project
     &__card
       margin-bottom: 5rem
@@ -241,6 +241,9 @@
     &__card
       &-text
         margin-left: auto
+  .completed-projects
+    &__slide-heading
+      margin-right: 2rem       
   .modal
     &__dialog
       max-width: 60%
@@ -249,6 +252,10 @@
     height: 3.33rem
     &:after
       line-height: 3.33rem   
+@media screen and (max-width:  601px)
+  .completed-projects
+    &__slide-heading
+      margin-right: 0         
 @media screen and (max-height:  580px)  
   .hero
     &__scroll-down

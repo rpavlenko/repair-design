@@ -61,6 +61,7 @@ $(document).ready(function () {
   // sliders
   var completedProjectsSwiper = new Swiper('.completed-projects-swiper', {
     loop: true,
+    spaceBetween: 100,
     navigation: {
       nextEl: '.completed-projects-next',
       prevEl: '.completed-projects-prev',
