@@ -25,11 +25,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 $(document).ready(function () {
   var modal = $('.modal'),
-    modalBtn = $('[data-toggle=modal]');
-  closeBtn = $('.modal__close');
-  successDialog = $('.success__dialog');
-  modalForm = $('.modal__form');
-  modalTitle = $('.modal__title');
+      modalBtn = $('[data-toggle=modal]');
+      closeBtn = $('.modal__close');
+      successDialog = $('.success__dialog');
+      modalForm = $('.modal__form');
+      modalTitle = $('.modal__title');
   modalBtn.on('click', function () {
     $('.modal__title').show();
     modalForm.show();
@@ -224,7 +224,7 @@ $(document).ready(function () {
         required: true,
         mobileRU: true,
       },
-      userEmail: {
+      userQuestion: {
         required: true,
         email: true
       },
@@ -237,7 +237,7 @@ $(document).ready(function () {
         maxlength: "Имя не больше 15 букв",
       },
       userPhone: "Телефон обязателен, 10 цифр",
-      userEmail: {
+      userQuestion: {
         required: "Заполните поле",
       },
       footerPolicyAgreement: "Согласие обязательно",

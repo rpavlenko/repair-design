@@ -678,10 +678,11 @@ img {
   -ms-flex-align: center;
   align-items: center; }
   .menu__logo {
-    margin-right: 2.9rem;
+    margin-left: -2rem;
+    margin-right: 2rem;
     font-size: 1.075rem;
-    color: #E3B873;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #E3B873; }
     .menu__logo:hover {
       color: #fff;
       -webkit-transition: color 0.2s;
@@ -1214,7 +1215,7 @@ a {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
-    margin-top: -1.5rem;
+    margin-top: -4.5rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1511,6 +1512,8 @@ a {
   .footer__adress {
     max-width: 35rem;
     margin: auto; }
+  .footer__link {
+    color: #E3B873; }
 
 .adress__title {
   padding-top: 0;
@@ -1741,10 +1744,7 @@ a {
 .success__image {
   text-align: center; }
 
-@media screen and (min-width: 1400px) {
-  .container__header, .container__footer-menu {
-    margin-left: 5.8rem;
-    max-width: 85%; }
+@media screen and (min-width: 1440px) {
   .container__types {
     margin: 0 auto; }
   .container__completed-projects {
@@ -1761,8 +1761,6 @@ a {
     width: 100%; }
   .six-steps {
     background-image: none; }
-  .menu__logo {
-    margin: 0; }
   .nav__item {
     margin-right: 2.94rem; }
   .col {
