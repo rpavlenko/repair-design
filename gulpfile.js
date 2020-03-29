@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
 const tinypng = require('gulp-tinypng-compress');
+const ftp = require('vinyl-ftp');
 
 function bs() {
   serveSass();
@@ -85,5 +86,24 @@ function imagemin(done) {
   done();
 }
 
+function deploy(done) {
+  var conn = ftp.create({
+    host: 'rpavlenko.ru',
+    user: 'justs320_gulp',
+    password: 'F0m2K2p7',
+    parallel: 10,
+  });
+
+  var globs = [
+    'dist/**',
+  ];
+  return src(globs, {
+      buffer: false
+    })
+    .pipe(conn.dest('/www/rpavlenko.ru/repair-design/'));
+    done();
+};
+
 exports.serve = bs;
+exports.deploy = deploy;
 exports.build = series(buildCSS, buildJS, html, php, fonts, imagemin);

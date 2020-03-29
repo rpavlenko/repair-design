@@ -947,7 +947,10 @@ a {
     font-size: 0.928rem;
     line-height: 1.428rem;
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-style: normal;
+    font-weight: normal; }
 
 .icon {
   display: inline-block; }
@@ -1400,6 +1403,11 @@ a {
   padding: 1.2rem 0;
   text-align: center; }
 
+.types__pricetag {
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-style: normal;
+  font-weight: normal; }
+
 .project {
   padding-bottom: 0; }
   .project__image {
@@ -1424,6 +1432,10 @@ a {
     margin-bottom: 2rem; }
   .project__text {
     margin-top: -9.3rem; }
+  .project__pricetag {
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-style: normal;
+    font-weight: normal; }
 
 .footer {
   padding-top: 3rem;
@@ -2202,6 +2214,8 @@ a {
     font-size: 1.16rem; }
   .swiper--padding-bottom {
     padding-bottom: 1.91rem; }
+  .modal__dialog {
+    min-width: 100%; }
   #footerPolicyAgreement-error {
     position: absolute;
     top: 25px; }
@@ -2453,3 +2467,15 @@ a {
 @media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .video__play {
     margin-top: 150px; } }
+
+@media screen and (max-device-width: 1400px) and (orientation: landscape) {
+  .modal__dialog {
+    max-width: 40rem;
+    max-height: 37.5rem; }
+  .modal__input-group {
+    margin-bottom: 1rem; } }
+
+@media screen and (max-device-height: 500px) and (orientation: landscape) {
+  .modal__dialog {
+    max-width: 40rem;
+    max-height: 30rem; } }
