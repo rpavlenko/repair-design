@@ -4,7 +4,7 @@
 This is a landing page for a company which offers apartment repairs.
 Added RWD design, slider galleries, modal windows, Google maps, embedded YouTube video. 
 
-[Project live demo](https://rpavlenko.github.io/repair-design/src/)
+[Project live demo](https://rpavlenko.github.io/repair-design/src/)  
 [Figma project](https://www.figma.com/file/2pcjrSilnk2VRV9iMKZ1pP/Repair-Design-Project)
 
 ### Used technologies
