@@ -1,23 +1,23 @@
-#Repair Design - landing page
+# Repair Design - landing page
 
-##Project description
+## Project description
 This is a landing page for a company which offers apartment repairs.
 Added RWD design, slider galleries, modal windows, Google map, embedded video. 
 
 [Project live demo](https://rpavlenko.github.io/repair-design/src/)
 
-###Used technologies
+### Used technologies
 HTML
 CSS (SASS)
 JS
 
-###Used Methodologies
+### Used Methodologies
 BEM
 
-###Task runner
+### Task runner
 Gulp
 
-###Tools: 
+### Tools: 
 jQuery
 jQuery validation plugin
 PHPmailer (library to send emails)
