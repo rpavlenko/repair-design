@@ -19,12 +19,12 @@ BEM
 Gulp
 
 ### Tools: 
-jQuery
-jQuery validation plugin
-PHPmailer (library to send emails)
-Swiper (for slider galleries)
-lazysizes (image lazyloader)
-Figma
-Google Fonts
-Google Analytics
-Google Maps
+jQuery  
+jQuery validation plugin  
+PHPmailer (library to send emails)  
+Swiper (for slider galleries)  
+lazysizes (image lazyloader)  
+Figma  
+Google Fonts  
+Google Analytics  
+Google Maps  
