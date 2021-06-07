@@ -21,9 +21,9 @@ Gulp
 ### Tools: 
 jQuery  
 jQuery validation plugin  
-PHPmailer (library to send emails)  
+PHPmailer (library for sending email)  
 Swiper (for slider galleries)  
-lazysizes (image lazyloader)  
+lazysizes (lazyloader for images)  
 Figma  
 Google Fonts  
 Google Analytics  
